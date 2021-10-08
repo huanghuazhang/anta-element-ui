@@ -46,14 +46,3 @@ $--border-radius-zero: 0;
 
 /* 改变 icon 字体路径变量，必需 */
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
-
-
-@import '~element-ui/packages/theme-chalk/src/reset';
-
-body {
-	font-family: font-family：-apple-system, BlinkMacSystemFont, 'Segoe UI',
-		Roboto, 'Segoe UI', 'Helvetica Neue', 'PingFang SC', 'Noto Sans',
-		'Noto Sans CJK SC', 'Microsoft YaHei', 微软雅黑, sans-serif;
-}
-
-@import '~element-ui/packages/theme-chalk/src/index';

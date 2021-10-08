@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/youpinyao/anta-element-ui#readme",
   "dependencies": {
+    "clipboard": "^2.0.8",
     "element-ui": "^2.15.6"
   },
   "devDependencies": {
