@@ -9,7 +9,7 @@
 ## 使用
 
 ```js
-import 'anta-element-ui/src/scss/theme.scss';
+import 'anta-element-ui/src/scss/index.scss';
 import AntaElementUI from 'anta-element-ui';
 
 Vue.use(AntaElementUI);
