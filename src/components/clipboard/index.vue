@@ -43,10 +43,10 @@ export default {
 			this.clipboard = clipboard;
 
 			clipboard.on('success', e => {
-				console.info('Action:', e.action);
-				console.info('Text:', e.text);
-				console.info('Trigger:', e.trigger);
-				e.clearSelection();
+				// console.info('Action:', e.action);
+				// console.info('Text:', e.text);
+				// console.info('Trigger:', e.trigger);
+				// e.clearSelection();
 				this.$emit('success', e);
 			});
 			clipboard.on('error', e => {

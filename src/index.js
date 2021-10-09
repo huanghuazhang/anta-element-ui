@@ -1,7 +1,5 @@
 import ElementUI from 'element-ui';
 
-import './scss/theme.scss';
-
 import AtButton from './components/button/index.js';
 import AtButtonGroup from './components/button-group/index.js';
 import AtIcon from './components/icon/index';
