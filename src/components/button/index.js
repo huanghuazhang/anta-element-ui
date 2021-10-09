@@ -3,9 +3,21 @@ import withStaticClass from '../../utils/withStaticClass';
 
 const AtButton = {
 	name: 'AtButton',
+	props: {
+		square: {
+			type: Boolean,
+			default: false
+		}
+	},
 	extends: ElButton,
 	render(...args) {
-		return withStaticClass(this, ElButton, ...args);
+		const element = withStaticClass(this, ElButton, ...args);
+
+		element.data.class.push({
+			'is-square': this.square
+		});
+
+		return element;
 	}
 };
 

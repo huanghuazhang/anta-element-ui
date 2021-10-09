@@ -3,7 +3,7 @@
 @import '~element-ui/packages/theme-chalk/src/reset';
 
 body {
-	font-family: font-family：-apple-system, BlinkMacSystemFont, 'Segoe UI',
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		Roboto, 'Segoe UI', 'Helvetica Neue', 'PingFang SC', 'Noto Sans',
 		'Noto Sans CJK SC', 'Microsoft YaHei', 微软雅黑, sans-serif;
 }
@@ -12,3 +12,5 @@ body {
 
 // custom components
 @import '../components/icon/index.scss';
+@import '../components/button/index.scss';
+@import '../components/button-group/index.scss';

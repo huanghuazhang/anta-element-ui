@@ -1,5 +1,14 @@
+/* 默认色配置 */
+$--color-b6: #192E57;
+$--color-b5: #10439B;
+$--color-b4: #155BD4;
+$--color-b3: #5487DF;
+$--color-b2: #94B4EB;
+$--color-b1: #EDF4FF;
+
+
 /* 改变主题色变量 */
-$--color-primary: #155bd4;
+$--color-primary: $--color-b4;
 
 $--color-success: #2da641;
 $--color-warning: #ed6a0c;

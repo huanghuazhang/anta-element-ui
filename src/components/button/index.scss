@@ -1,0 +1,45 @@
+.at-button {
+	border-radius: $--border-radius-small;
+	font-size: 16px;
+	padding: 11px 20px;
+	// min-width: 96px;
+
+	[class*='at-icon-'] + span {
+		margin-left: 5px;
+	}
+
+	&.is-square,
+	&.is-circle {
+		padding: 11px;
+	}
+
+	&.el-button--medium {
+		font-size: 14px;
+		// min-width: 84px;
+		padding: 10px 17px;
+
+		&.is-square,
+		&.is-circle {
+			padding: 10px;
+		}
+	}
+	&.el-button--small {
+		font-size: 14px;
+		padding: 8px 15px;
+		// min-width: 74px;
+		&.is-square,
+		&.is-circle {
+			padding: 8px;
+		}
+	}
+	&.el-button--mini {
+		font-size: 14px;
+		padding: 4px 7px;
+		// min-width: 58px;
+
+		&.is-square,
+		&.is-circle {
+			padding: 4px;
+		}
+	}
+}

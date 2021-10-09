@@ -1,0 +1,9 @@
+.el-button-group,
+.at-button-group {
+	> .el-button:first-child:last-child {
+		border-top-right-radius: $--border-radius-small;
+		border-bottom-right-radius: $--border-radius-small;
+		border-top-left-radius: $--border-radius-small;
+		border-bottom-left-radius: $--border-radius-small;
+	}
+}
