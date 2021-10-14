@@ -21,12 +21,11 @@
   margin-right: 5px;
 }
 
-
 @font-face {
   font-family: "antaicons"; /* Project id 2860932 */
-  src: url('//at.alicdn.com/t/font_2860932_u4a40yrgbv.woff2?t=1634000733145') format('woff2'),
-       url('//at.alicdn.com/t/font_2860932_u4a40yrgbv.woff?t=1634000733145') format('woff'),
-       url('//at.alicdn.com/t/font_2860932_u4a40yrgbv.ttf?t=1634000733145') format('truetype');
+  src: url('//at.alicdn.com/t/font_2860932_2k09jh9zqts.woff2?t=1634203674962') format('woff2'),
+       url('//at.alicdn.com/t/font_2860932_2k09jh9zqts.woff?t=1634203674962') format('woff'),
+       url('//at.alicdn.com/t/font_2860932_2k09jh9zqts.ttf?t=1634203674962') format('truetype');
 }
 
 .antaicons {
@@ -35,6 +34,22 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.at-icon-eye-close:before {
+  content: "\e6ab";
+}
+
+.at-icon-lock-1:before {
+  content: "\e6a8";
+}
+
+.at-icon-user:before {
+  content: "\e6a9";
+}
+
+.at-icon-eye:before {
+  content: "\e6aa";
 }
 
 .at-icon-info-circle-o:before {

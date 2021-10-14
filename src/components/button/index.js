@@ -7,6 +7,10 @@ const AtButton = {
 		square: {
 			type: Boolean,
 			default: false
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	},
 	extends: ElButton,
@@ -15,6 +19,9 @@ const AtButton = {
 
 		element.data.class.push({
 			'is-square': this.square
+		});
+		element.data.class.push({
+			'is-block': this.block
 		});
 
 		return element;

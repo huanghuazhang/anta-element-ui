@@ -8,6 +8,11 @@
 		margin-left: 5px;
 	}
 
+	&.is-block {
+		display: block;
+		width: 100%;
+	}
+
 	&.is-square,
 	&.is-circle {
 		padding: 11px;
