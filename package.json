@@ -14,6 +14,10 @@
     "element",
     "anta"
   ],
+  "engines": {
+    "node": ">=14.17.1"
+  },
+  "typings": "types/index.d.ts",
   "author": "youpinyao",
   "license": "MIT",
   "bugs": {

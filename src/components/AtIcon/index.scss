@@ -23,9 +23,9 @@
 
 @font-face {
   font-family: "antaicons"; /* Project id 2860932 */
-  src: url('//at.alicdn.com/t/font_2860932_2k09jh9zqts.woff2?t=1634203674962') format('woff2'),
-       url('//at.alicdn.com/t/font_2860932_2k09jh9zqts.woff?t=1634203674962') format('woff'),
-       url('//at.alicdn.com/t/font_2860932_2k09jh9zqts.ttf?t=1634203674962') format('truetype');
+  src: url('//at.alicdn.com/t/font_2860932_p5e3p9dfwkk.woff2?t=1634289058222') format('woff2'),
+       url('//at.alicdn.com/t/font_2860932_p5e3p9dfwkk.woff?t=1634289058222') format('woff'),
+       url('//at.alicdn.com/t/font_2860932_p5e3p9dfwkk.ttf?t=1634289058222') format('truetype');
 }
 
 .antaicons {
@@ -34,6 +34,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.at-icon-tag:before {
+  content: "\e6ac";
+}
+
+.at-icon-user-o:before {
+  content: "\e6ad";
+}
+
+.at-icon-home:before {
+  content: "\e6ae";
 }
 
 .at-icon-eye-close:before {

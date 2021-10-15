@@ -1,11 +1,12 @@
 import ElementUI from 'element-ui';
+import AtButton from './components/AtButton';
+import AtIcon from './components/AtIcon';
+import AtClipboard from './components/AtClipboard';
 
-import AtButton from './components/button/index.js';
-import AtButtonGroup from './components/button-group/index.js';
-import AtIcon from './components/icon/index';
-import AtClipboard from './components/clipboard/index';
+const components = [AtButton, AtIcon, AtClipboard];
 
-const components = [AtButton, AtButtonGroup, AtIcon, AtClipboard];
+export * from 'element-ui';
+export { AtButton, AtIcon, AtClipboard };
 
 export default {
 	...ElementUI,
