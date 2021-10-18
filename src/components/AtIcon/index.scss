@@ -23,9 +23,9 @@
 
 @font-face {
   font-family: "antaicons"; /* Project id 2860932 */
-  src: url('//at.alicdn.com/t/font_2860932_p5e3p9dfwkk.woff2?t=1634289058222') format('woff2'),
-       url('//at.alicdn.com/t/font_2860932_p5e3p9dfwkk.woff?t=1634289058222') format('woff'),
-       url('//at.alicdn.com/t/font_2860932_p5e3p9dfwkk.ttf?t=1634289058222') format('truetype');
+  src: url('//at.alicdn.com/t/font_2860932_8bqpqazvqo7.woff2?t=1634539737199') format('woff2'),
+       url('//at.alicdn.com/t/font_2860932_8bqpqazvqo7.woff?t=1634539737199') format('woff'),
+       url('//at.alicdn.com/t/font_2860932_8bqpqazvqo7.ttf?t=1634539737199') format('truetype');
 }
 
 .antaicons {
@@ -34,6 +34,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.at-icon-folding:before {
+  content: "\e6b3";
+}
+
+.at-icon-computer:before {
+  content: "\e6af";
+}
+
+.at-icon-bell-1-o:before {
+  content: "\e6b0";
+}
+
+.at-icon-gear-o:before {
+  content: "\e6b1";
+}
+
+.at-icon-tag-full:before {
+  content: "\e6b2";
 }
 
 .at-icon-tag:before {
