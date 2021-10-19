@@ -30,9 +30,6 @@
 		&.is-circle {
 			padding: 10px;
 		}
-		[class*='at-icon-'] {
-			font-size: 12px;
-		}
 	}
 	&.el-button--small {
 		font-size: 14px;
@@ -41,10 +38,6 @@
 		&.is-square,
 		&.is-circle {
 			padding: 8px;
-		}
-
-		[class*='at-icon-'] {
-			font-size: 12px;
 		}
 	}
 	&.el-button--mini {
@@ -55,10 +48,6 @@
 		&.is-square,
 		&.is-circle {
 			padding: 4px;
-		}
-
-		[class*='at-icon-'] {
-			font-size: 12px;
 		}
 	}
 }

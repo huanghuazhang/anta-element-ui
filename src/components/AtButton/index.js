@@ -2,8 +2,10 @@ import ElButton from 'element-ui/packages/button/src/button';
 import withStaticClass from '../../utils/withStaticClass';
 
 const AtButton = {
+	...ElButton,
 	name: 'AtButton',
 	props: {
+		...ElButton.props,
 		square: {
 			type: Boolean,
 			default: false
@@ -13,7 +15,6 @@ const AtButton = {
 			default: false
 		}
 	},
-	extends: ElButton,
 	render(...args) {
 		const element = withStaticClass(this, ElButton, ...args);
 

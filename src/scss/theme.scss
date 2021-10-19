@@ -13,6 +13,6 @@ body {
 // custom components
 @import '../components/AtButton/index.scss';
 @import '../components/AtIcon/index.scss';
-
-@import './breadcrumb.scss';
-@import './dropdown.scss';
+@import '../components/AtBreadcrumb/index.scss';
+@import '../components/AtDropdown/index.scss';
+@import '../components/AtSteps/index.scss';

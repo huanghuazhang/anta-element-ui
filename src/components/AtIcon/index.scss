@@ -11,14 +11,19 @@
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	&:before {
+		display: block;
+		transform: scale((12/14));
+	}
 }
 
 
 .at-icon--right {
-  margin-left: 8px;
+  margin-left: 5px;
 }
 .at-icon--left {
-  margin-right: 8px;
+  margin-right: 5px;
 }
 
 @font-face {
