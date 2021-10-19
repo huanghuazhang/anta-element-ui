@@ -10,7 +10,6 @@
 		.el-breadcrumb__inner a {
 			color: $--color-text-secondary;
 			font-weight: 400;
-
 			&:hover {
 				color: $--color-b4;
 			}
@@ -18,7 +17,16 @@
 		&[aria-current='page'] {
 			.el-breadcrumb__inner {
 				color: $--color-text-primary;
-				font-weight: bold;
+				&:hover {
+					color: $--color-text-primary;
+				}
+				&.is-link,
+				a {
+					cursor: pointer;
+					&:hover {
+						color: $--color-b4;
+					}
+				}
 			}
 		}
 	}
