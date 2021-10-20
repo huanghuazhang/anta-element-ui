@@ -1,0 +1,300 @@
+
+.at-steps {
+	&.el-steps--simple {
+		padding: 0 0;
+		background-color: transparent;
+		border: 1px solid $--border-color-base;
+		border-radius: 0;
+		&.el-steps--tag {
+			border-width: 0;
+		}
+	}
+}
+.at-step {
+	// 垂直模式
+	&.is-vertical {
+		.el-step__main {
+			text-align: left;
+			display: block;
+		}
+	}
+	// 简单模式
+	&.is-simple {
+		padding: 14px 0;
+		justify-content: center;
+		transition: background-color 300ms ease;
+
+		&.is-tag {
+			background-color: $--background-color-base;
+			border: 1px solid $--border-color-base;
+			border-right-width: 0;
+			+ .el-step {
+				&:after {
+					display: none;
+				}
+				&:before {
+					display: none;
+				}
+			}
+			&.is-process,
+			&.is-success,
+			&.is-error {
+				background-color: $--color-white;
+				border-bottom-color: transparent;
+				.el-step__title {
+					color: $--color-text-primary;
+				}
+			}
+			&.is-success {
+				& + .el-step {
+					border-left-color: transparent;
+				}
+			}
+		}
+		&:last-of-type {
+			&.is-flex {
+				flex-basis: 100% !important;
+				flex-grow: 1;
+				flex-shrink: 1;
+			}
+			&.is-tag {
+				border-right-width: 1px;
+			}
+		}
+		.el-step__head {
+			&.is-process {
+				.el-step__icon {
+					border-color: transparent;
+					background-color: transparent;
+				}
+			}
+			&.is-success {
+				.el-step__icon {
+					border-color: transparent;
+					background-color: transparent;
+				}
+			}
+		}
+		&.not-icon {
+			.el-step__head {
+				display: none;
+			}
+		}
+
+		.el-step__icon-inner[class*='at-icon']:not(.is-status) {
+			font-size: 18px;
+		}
+		.el-step__icon {
+			.el-icon-check {
+				font-size: 16px;
+			}
+		}
+		.el-step__title {
+			font-size: 14px;
+			color: $--color-text-primary;
+			font-weight: bold;
+			&.is-wait {
+				color: $--color-text-primary;
+			}
+		}
+		&:not(:last-of-type) {
+			.el-step__title {
+				max-width: 100%;
+			}
+		}
+		.el-step__arrow {
+			display: none;
+		}
+		.el-step__main {
+			flex-grow: 0;
+		}
+		+ .el-step:before {
+			content: '';
+			display: block;
+			border: 24px solid $--border-color-base;
+			position: absolute;
+			left: -11px;
+			top: 0;
+			transform: scaleX(0.5);
+			border-right-color: transparent;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+		}
+		+ .el-step:after {
+			content: '';
+			display: block;
+			border: 24px solid $--color-white;
+			position: absolute;
+			left: -12px;
+			top: 0;
+			transform: scaleX(0.5);
+			border-right-color: transparent;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+			transition: border-color 300ms ease;
+		}
+		&.is-process,
+		&.is-success,
+		&.is-error {
+			background-color: $--color-primary;
+
+			+ .el-step:after {
+				border-left-color: $--color-primary;
+			}
+			.el-step__title {
+				color: $--color-white;
+			}
+		}
+		&.is-error {
+			background-color: $--color-danger;
+			+ .el-step:after {
+				border-left-color: $--color-danger;
+			}
+		}
+	}
+	&.has-click {
+		cursor: pointer;
+		&:hover {
+			background-color: mix($--color-white, $--background-color-base, 50%);
+			+ .el-step:after {
+				border-left-color: mix($--color-white, $--background-color-base, 50%);
+			}
+		}
+		&:active {
+			background-color: $--color-white;
+			+ .el-step:after {
+				border-left-color: $--color-white;
+			}
+		}
+		&.is-process,
+		&.is-success {
+			&:hover {
+				background-color: $--color-primary-light-2;
+				+ .el-step:after {
+					border-left-color: $--color-primary-light-2;
+				}
+			}
+			&:active {
+				background-color: $--color-primary;
+				+ .el-step:after {
+					border-left-color: $--color-primary;
+				}
+			}
+		}
+		&.is-error {
+			&:hover {
+				background-color: mix($--color-white, $--color-danger, 20%);
+				+ .el-step:after {
+					border-left-color: mix($--color-white, $--color-danger, 20%);
+				}
+			}
+			&:active {
+				background-color: $--color-danger;
+				+ .el-step:after {
+					border-left-color: $--color-danger;
+				}
+			}
+		}
+		&.is-tag {
+			&.is-process,
+			&.is-success,
+			&.is-error {
+				&:hover {
+					background-color: mix($--color-white, $--background-color-base, 50%);
+					+ .el-step:after {
+						border-left-color: mix(
+							$--color-white,
+							$--background-color-base,
+							50%
+						);
+					}
+				}
+				&:active {
+					background-color: $--color-white;
+					+ .el-step:after {
+						border-left-color: $--color-white;
+					}
+				}
+			}
+		}
+	}
+
+	.el-step__main {
+		text-align: center;
+		display: inline-block;
+	}
+	.el-step__description {
+		padding-right: 0;
+	}
+	.el-step__head {
+		&.is-process {
+			.el-step__icon {
+				border-color: $--color-primary;
+				background-color: $--color-primary;
+			}
+		}
+		&.is-error {
+			.el-step__icon {
+				border: 0;
+				color: $--color-danger;
+				background-color: $--color-white;
+			}
+		}
+		&.is-success {
+			.el-step__line {
+				background-color: $--color-primary;
+				&-inner {
+					border-width: 0 !important;
+				}
+			}
+			.el-step__icon {
+				border-color: $--color-primary;
+				color: $--color-primary;
+				background-color: $--color-white;
+			}
+		}
+	}
+	.el-step__title {
+		font-size: 14px;
+		color: $--color-text-primary;
+		&.is-wait {
+			color: $--color-text-secondary;
+		}
+		&.is-error,
+		&.is-success {
+			font-weight: bold;
+		}
+		&.is-error {
+			color: $--color-danger;
+		}
+	}
+	.el-step__description {
+		color: $--color-text-secondary;
+		&.is-wait {
+			color: $--color-text-secondary;
+		}
+	}
+	.el-step__icon {
+		transition: color 0.15s ease-out;
+		&.is-text {
+			border-color: $--color-text-placeholder;
+			background-color: $--color-text-placeholder;
+			color: $--color-white;
+		}
+		.el-icon-check {
+			font-family: antaicons !important;
+			font-size: 12px;
+			&:before {
+				content: '\e651';
+			}
+		}
+		.el-icon-close {
+			font-family: antaicons !important;
+			font-size: 24px;
+			transform: translateY(0);
+			&:before {
+				content: '\e660';
+			}
+		}
+	}
+}
