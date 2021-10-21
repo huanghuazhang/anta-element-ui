@@ -8,11 +8,11 @@ body {
 		'Noto Sans CJK SC', 'Microsoft YaHei', 微软雅黑, sans-serif;
 }
 
-@import '../components/AtIcon/index.scss';
 
 @import '~element-ui/packages/theme-chalk/src/index';
 
 // custom components
+@import '../components/AtIcon/index.scss';
 @import '../components/AtButton/index.scss';
 @import '../components/AtBreadcrumb/index.scss';
 @import '../components/AtDropdown/index.scss';
