@@ -9,6 +9,7 @@ import AtDropdownItem from './components/AtDropdownItem';
 import AtDropdownMenu from './components/AtDropdownMenu';
 import AtSteps from './components/AtSteps';
 import AtStep from './components/AtStep';
+import AtAlert from './components/AtAlert';
 
 export * from 'element-ui';
 export {
@@ -21,7 +22,8 @@ export {
 	AtDropdownItem,
 	AtDropdownMenu,
 	AtSteps,
-	AtStep
+	AtStep,
+	AtAlert
 };
 
 const components = [
@@ -34,7 +36,8 @@ const components = [
 	AtDropdownItem,
 	AtDropdownMenu,
 	AtSteps,
-	AtStep
+	AtStep,
+	AtAlert
 ];
 
 export default {

@@ -1,0 +1,129 @@
+.at-alert {
+	padding: 14px 16px;
+
+	&.is-big {
+		align-items: flex-start;
+
+		&.el-alert--info {
+			.el-alert__title {
+				color: $--color-primary;
+			}
+		}
+		&.el-alert--success {
+			.el-alert__title {
+				color: $--color-success;
+			}
+		}
+		&.el-alert--error {
+			.el-alert__title {
+				color: $--color-danger;
+			}
+		}
+		&.el-alert--warning {
+			.el-alert__title {
+				color: $--color-warning;
+			}
+		}
+	}
+	.el-alert__description {
+		font-size: 14px;
+		color: #646566;
+		line-height: 20px;
+	}
+	.el-alert__title {
+		font-size: 14px;
+	}
+	.el-alert__closebtn {
+		font-family: antaicons !important;
+		&.is-customed {
+			color: $--color-text-primary;
+			top: 13px;
+		}
+		&.el-icon-close {
+			font-size: 12px;
+			color: $--color-text-primary;
+			top: 18px;
+			&:before {
+				content: '\e658';
+			}
+		}
+	}
+	.el-alert__icon {
+		width: 14px;
+		font-family: antaicons !important;
+		font-size: 14px;
+
+		&.is-big {
+			position: relative;
+			top: 2px;
+		}
+		&.el-icon-info {
+			&:before {
+				content: '\e666';
+			}
+		}
+		&.el-icon-success {
+			&:before {
+				content: '\e66a';
+			}
+		}
+		&.el-icon-error {
+			&:before {
+				content: '\e659';
+			}
+		}
+		&.el-icon-warning {
+			&:before {
+				content: '\e6a1';
+			}
+		}
+	}
+	&.el-alert--info {
+		border: 1px solid $--color-b2;
+		border-radius: $--border-radius-small;
+		background-color: $--color-b1;
+		color: $--color-text-primary;
+		.el-alert__icon {
+			color: $--color-primary;
+		}
+		.el-alert__description {
+			color: #646566;
+		}
+	}
+	&.el-alert--success {
+		border: 1px solid #9fd6a8;
+		border-radius: $--border-radius-small;
+		background-color: #f0faf2;
+		color: $--color-text-primary;
+		.el-alert__icon {
+			color: $--color-success;
+		}
+		.el-alert__description {
+			color: #646566;
+		}
+	}
+	&.el-alert--error {
+		border: 1px solid #df4545;
+		border-radius: $--border-radius-small;
+		background-color: #ffebeb;
+		color: $--color-text-primary;
+		.el-alert__icon {
+			color: $--color-danger;
+		}
+		.el-alert__description {
+			color: #646566;
+		}
+	}
+	&.el-alert--warning {
+		border: 1px solid #f1924e;
+		border-radius: $--border-radius-small;
+		background-color: #fff5ed;
+		color: $--color-text-primary;
+		.el-alert__icon {
+			color: $--color-warning;
+		}
+		.el-alert__description {
+			color: #646566;
+		}
+	}
+}
