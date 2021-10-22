@@ -1,6 +1,20 @@
 .at-alert {
 	padding: 14px 16px;
 
+	&.is-small {
+		padding: 6px 10px;
+		.el-alert__description {
+			font-size: 12px;
+		}
+		.el-alert__title {
+			font-size: 12px;
+		}
+		.el-alert__icon {
+			// width: 12px;
+			// font-size: 12px;
+		}
+	}
+
 	&.is-big {
 		align-items: flex-start;
 

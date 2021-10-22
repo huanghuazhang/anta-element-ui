@@ -4,6 +4,13 @@ import withStaticClass from '../../utils/withStaticClass';
 const AtAlert = {
 	...ElAlert,
 	name: 'AtAlert',
+	props: {
+		...ElAlert.props,
+		small: {
+			type: Boolean,
+			value: false
+		}
+	},
 	render(...args) {
 		const element = withStaticClass(this, ElAlert, ...args);
 
@@ -15,6 +22,9 @@ const AtAlert = {
 
 		element.data.class.push({
 			'is-big': !!this.description
+		});
+		element.data.class.push({
+			'is-small': !!this.small
 		});
 
 		return element;
