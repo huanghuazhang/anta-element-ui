@@ -14,6 +14,7 @@ import { AtSkeleton } from './AtSkeleton';
 import { AtSkeletonItem } from './AtSkeletonItem';
 import { AtDialog } from './AtDialog';
 import { AtProgress } from './AtProgress';
+import { AtLoading } from './AtLoading';
 
 export {
 	AtButton,
@@ -29,6 +30,7 @@ export {
 	AtSkeleton,
 	AtSkeletonItem,
 	AtDialog,
-	AtProgress
+	AtProgress,
+	AtLoading
 };
 export default AntaElementUI;

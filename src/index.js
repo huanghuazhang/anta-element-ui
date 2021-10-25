@@ -15,6 +15,7 @@ import AtSkeleton from './components/AtSkeleton';
 import AtSkeletonItem from './components/AtSkeletonItem';
 import AtDialog from './components/AtDialog';
 import AtProgress from './components/AtProgress';
+import AtLoading from './components/AtLoading';
 
 export * from 'element-ui';
 export {
@@ -33,7 +34,8 @@ export {
 	AtSkeleton,
 	AtSkeletonItem,
 	AtDialog,
-	AtProgress
+	AtProgress,
+	AtLoading
 };
 
 const components = [
@@ -52,7 +54,8 @@ const components = [
 	AtSkeleton,
 	AtSkeletonItem,
 	AtDialog,
-	AtProgress
+	AtProgress,
+	AtLoading
 ];
 
 export default {

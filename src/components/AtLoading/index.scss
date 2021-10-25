@@ -1,0 +1,22 @@
+.at-loading-spinner {
+	.path-bg {
+		stroke-dasharray: 90, 150;
+		stroke-dashoffset: 0;
+		stroke-width: 3;
+		stroke: $--color-b1;
+		stroke-linecap: round;
+	}
+	.path {
+		stroke-width: 3;
+	}
+
+	&.horizontal {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.at-loading-text {
+			margin-left: 12px;
+		}
+	}
+}
