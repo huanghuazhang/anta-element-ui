@@ -1,5 +1,6 @@
 import ElementUI from 'element-ui';
 import AtButton from './components/AtButton';
+import AtButtonGroup from './components/AtButtonGroup';
 import AtIcon from './components/AtIcon';
 import AtClipboard from './components/AtClipboard';
 import AtBreadcrumb from './components/AtBreadcrumb';
@@ -13,10 +14,12 @@ import AtAlert from './components/AtAlert';
 import AtSkeleton from './components/AtSkeleton';
 import AtSkeletonItem from './components/AtSkeletonItem';
 import AtDialog from './components/AtDialog';
+import AtProgress from './components/AtProgress';
 
 export * from 'element-ui';
 export {
 	AtButton,
+	AtButtonGroup,
 	AtIcon,
 	AtClipboard,
 	AtBreadcrumb,
@@ -29,11 +32,13 @@ export {
 	AtAlert,
 	AtSkeleton,
 	AtSkeletonItem,
-	AtDialog
+	AtDialog,
+	AtProgress
 };
 
 const components = [
 	AtButton,
+	AtButtonGroup,
 	AtIcon,
 	AtClipboard,
 	AtBreadcrumb,
@@ -46,7 +51,8 @@ const components = [
 	AtAlert,
 	AtSkeleton,
 	AtSkeletonItem,
-	AtDialog
+	AtDialog,
+	AtProgress
 ];
 
 export default {
