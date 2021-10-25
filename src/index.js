@@ -12,6 +12,7 @@ import AtStep from './components/AtStep';
 import AtAlert from './components/AtAlert';
 import AtSkeleton from './components/AtSkeleton';
 import AtSkeletonItem from './components/AtSkeletonItem';
+import AtDialog from './components/AtDialog';
 
 export * from 'element-ui';
 export {
@@ -27,7 +28,8 @@ export {
 	AtStep,
 	AtAlert,
 	AtSkeleton,
-	AtSkeletonItem
+	AtSkeletonItem,
+	AtDialog
 };
 
 const components = [
@@ -43,7 +45,8 @@ const components = [
 	AtStep,
 	AtAlert,
 	AtSkeleton,
-	AtSkeletonItem
+	AtSkeletonItem,
+	AtDialog
 ];
 
 export default {

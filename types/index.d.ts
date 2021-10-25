@@ -11,6 +11,7 @@ import { AtDropdownMenu } from './AtDropdownMenu';
 import { AtAlert } from './AtAlert';
 import { AtSkeleton } from './AtSkeleton';
 import { AtSkeletonItem } from './AtSkeletonItem';
+import { AtDialog } from './AtDialog';
 
 export {
 	AtButton,
@@ -24,5 +25,6 @@ export {
 	AtAlert,
 	AtSkeleton,
 	AtSkeletonItem,
+	AtDialog
 };
 export default AntaElementUI;
