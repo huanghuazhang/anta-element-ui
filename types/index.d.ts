@@ -9,6 +9,8 @@ import { AtDropdown } from './AtDropdown';
 import { AtDropdownItem } from './AtDropdownItem';
 import { AtDropdownMenu } from './AtDropdownMenu';
 import { AtAlert } from './AtAlert';
+import { AtSkeleton } from './AtSkeleton';
+import { AtSkeletonItem } from './AtSkeletonItem';
 
 export {
 	AtButton,
@@ -20,5 +22,7 @@ export {
 	AtDropdownItem,
 	AtDropdownMenu,
 	AtAlert,
+	AtSkeleton,
+	AtSkeletonItem,
 };
 export default AntaElementUI;
