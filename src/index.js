@@ -17,6 +17,8 @@ import AtDialog from './components/AtDialog';
 import AtProgress from './components/AtProgress';
 import AtLoading from './components/AtLoading';
 
+import './components/AtMessageBox';
+
 export * from 'element-ui';
 export {
 	AtButton,
