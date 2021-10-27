@@ -17,6 +17,9 @@ import AtDialog from './components/AtDialog';
 import AtProgress from './components/AtProgress';
 import AtLoading from './components/AtLoading';
 
+import AtInput from './components/AtInput';
+import AtAutocomplete from './components/AtAutocomplete';
+
 import './components/AtMessageBox';
 
 export * from 'element-ui';
@@ -37,7 +40,9 @@ export {
 	AtSkeletonItem,
 	AtDialog,
 	AtProgress,
-	AtLoading
+	AtLoading,
+	AtInput,
+	AtAutocomplete
 };
 
 const components = [
@@ -57,7 +62,9 @@ const components = [
 	AtSkeletonItem,
 	AtDialog,
 	AtProgress,
-	AtLoading
+	AtLoading,
+	AtInput,
+	AtAutocomplete
 ];
 
 export default {

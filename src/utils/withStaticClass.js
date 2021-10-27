@@ -1,3 +1,13 @@
+function withAtClass(cls) {
+	let sCls = cls;
+	sCls = sCls.split(' ');
+	sCls = sCls.filter(item => !!(item || '').trim());
+	sCls = sCls.map(item => item.replace(/^(el-)/g, 'at-'));
+	sCls = sCls.join(' ');
+
+	return sCls;
+}
+
 export default function withStaticClass(scope, component, ...args) {
 	const element = component.render.bind(scope)(...args);
 	let ele = element;
@@ -6,28 +16,15 @@ export default function withStaticClass(scope, component, ...args) {
 		ele = element.children[0];
 	}
 
-	let { staticClass } = ele.data;
-
-	if (!staticClass) {
-		staticClass = ele.data.class;
-
-		if (Array.isArray(staticClass)) {
-			staticClass = staticClass.join(' ');
-		}
-	}
+	let { staticClass, class: cls } = ele.data;
 
 	if (staticClass) {
-		staticClass = staticClass.split(' ');
-		staticClass = staticClass.filter(item => !!(item || '').trim());
-		staticClass = staticClass.map(item => item.replace(/^(el-)/g, 'at-'));
-		staticClass = staticClass.join(' ');
-
-		if (ele.data.staticClass) {
-			ele.data.staticClass = `${ele.data.staticClass} ${staticClass}`;
-		} else {
-			ele.data.class = `${[ele.data.class]
-				.flat()
-				.join(' ')} ${staticClass}`.split(' ');
+		ele.data.staticClass = `${staticClass} ${withAtClass(staticClass)}`;
+	} else if (cls) {
+		if (Array.isArray(cls)) {
+			cls.push(withAtClass(cls[0]));
+		} else if (typeof cls === 'string') {
+			ele.data.class = `${cls} ${withAtClass(cls)}`;
 		}
 	}
 	return element;

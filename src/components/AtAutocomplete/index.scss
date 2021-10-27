@@ -1,0 +1,25 @@
+.at-autocomplete {
+	display: block;
+}
+.at-autocomplete-suggestion {
+	.el-autocomplete-suggestion__wrap {
+		padding: 0;
+	}
+	&.is-loading {
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: normal;
+		}
+	}
+	li {
+		line-height: 32px;
+		padding: 0 12px;
+		transition: background-color 300ms ease;
+		&:hover {
+			background-color: $--color-b1;
+			color: $--color-text-regular;
+		}
+	}
+}

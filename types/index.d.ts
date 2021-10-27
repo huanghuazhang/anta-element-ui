@@ -16,6 +16,9 @@ import { AtDialog } from './AtDialog';
 import { AtProgress } from './AtProgress';
 import { AtLoading } from './AtLoading';
 
+import { AtInput } from './AtInput';
+import { AtAutocomplete } from './AtAutocomplete';
+
 export {
 	AtButton,
 	AtButtonGroup,
@@ -31,6 +34,8 @@ export {
 	AtSkeletonItem,
 	AtDialog,
 	AtProgress,
-	AtLoading
+	AtLoading,
+	AtInput,
+	AtAutocomplete
 };
 export default AntaElementUI;

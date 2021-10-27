@@ -9,7 +9,13 @@
 				v-show="visible"
 				class="el-loading-mask at-loading-mask"
 				:style="{ backgroundColor: background || '' }"
-				:class="[customClass, { 'is-fullscreen': fullscreen }]"
+				:class="[
+					customClass,
+					{
+						'is-static': isStatic
+					},
+					{ 'is-fullscreen': fullscreen }
+				]"
 			>
 				<div class="el-loading-spinner at-loading-spinner" :class="[direction]">
 					<svg
@@ -33,6 +39,10 @@
 export default {
 	name: 'AtLoading',
 	props: {
+		static: {
+			type: Boolean,
+			default: false
+		},
 		direction: {
 			type: String,
 			default: 'vertical' //'vertical' | 'horizontal';
@@ -64,6 +74,11 @@ export default {
 		customClass: {
 			type: String,
 			default: ''
+		}
+	},
+	computed: {
+		isStatic() {
+			return this.static;
 		}
 	},
 

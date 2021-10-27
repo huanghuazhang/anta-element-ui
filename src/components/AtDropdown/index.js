@@ -14,6 +14,13 @@ const AtDropdown = {
 	render(...args) {
 		const element = withStaticClass(this, ElDropdown, ...args);
 
+		if (element?.children[1]) {
+			if (!element?.children[1]?.data?.class) {
+				element.children[1].data.class = [];
+			}
+			element?.children[1]?.data?.class?.push('at-popper');
+		}
+
 		return element;
 	}
 };

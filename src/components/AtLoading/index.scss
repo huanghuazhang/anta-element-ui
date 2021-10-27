@@ -20,3 +20,11 @@
 		}
 	}
 }
+
+.at-loading-mask.is-static {
+	position: static;
+	.at-loading-spinner {
+		position: static;
+		margin-top: 0;
+	}
+}

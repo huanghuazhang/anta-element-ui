@@ -2,6 +2,7 @@ import { ElementUIComponent } from 'element-ui/types/component';
 
 /** Button Component */
 export declare class AtLoading extends ElementUIComponent {
+	static?: boolean;
 	direction: 'vertical' | 'horizontal';
 	size?: number;
 	text?: string;
