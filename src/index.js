@@ -19,6 +19,9 @@ import AtLoading from './components/AtLoading';
 
 import AtInput from './components/AtInput';
 import AtAutocomplete from './components/AtAutocomplete';
+import AtRadio from './components/AtRadio';
+import AtRadioGroup from './components/AtRadioGroup';
+import AtRadioButton from './components/AtRadioButton';
 
 import './components/AtMessageBox';
 
@@ -42,7 +45,10 @@ export {
 	AtProgress,
 	AtLoading,
 	AtInput,
-	AtAutocomplete
+	AtAutocomplete,
+	AtRadio,
+	AtRadioGroup,
+	AtRadioButton
 };
 
 const components = [
@@ -64,7 +70,10 @@ const components = [
 	AtProgress,
 	AtLoading,
 	AtInput,
-	AtAutocomplete
+	AtAutocomplete,
+	AtRadio,
+	AtRadioGroup,
+	AtRadioButton
 ];
 
 export default {

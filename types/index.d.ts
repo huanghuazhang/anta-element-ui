@@ -18,6 +18,9 @@ import { AtLoading } from './AtLoading';
 
 import { AtInput } from './AtInput';
 import { AtAutocomplete } from './AtAutocomplete';
+import { AtRadio } from './AtRadio';
+import { AtRadioGroup } from './AtRadioGroup';
+import { AtRadioButton } from './AtRadioButton';
 
 export {
 	AtButton,
@@ -36,6 +39,9 @@ export {
 	AtProgress,
 	AtLoading,
 	AtInput,
-	AtAutocomplete
+	AtAutocomplete,
+	AtRadio,
+	AtRadioGroup,
+	AtRadioButton
 };
 export default AntaElementUI;
