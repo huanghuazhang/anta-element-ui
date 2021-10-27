@@ -3,11 +3,14 @@
 	color: $--color-text-primary;
 	.el-radio__label {
 		padding-left: 8px;
+		line-height: 16px;
+		vertical-align: top;
 	}
 	.el-radio__inner {
 		width: 16px;
 		height: 16px;
 		vertical-align: top;
+		transition: background-color 100ms ease, border-color 100ms ease;
 	}
 	.el-radio__input {
 		&.is-checked {

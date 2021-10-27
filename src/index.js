@@ -24,6 +24,9 @@ import AtRadioGroup from './components/AtRadioGroup';
 import AtRadioButton from './components/AtRadioButton';
 import './components/AtMessageBox';
 import AtPopover from './components/AtPopover';
+import AtCheckbox from './components/AtCheckbox';
+import AtCheckboxGroup from './components/AtCheckboxGroup';
+import AtCheckboxButton from './components/AtCheckboxButton';
 
 export * from 'element-ui';
 export {
@@ -49,7 +52,10 @@ export {
 	AtAutocomplete,
 	AtRadio,
 	AtRadioGroup,
-	AtRadioButton
+	AtRadioButton,
+	AtCheckbox,
+	AtCheckboxGroup,
+	AtCheckboxButton
 };
 
 const components = [
@@ -75,7 +81,10 @@ const components = [
 	AtAutocomplete,
 	AtRadio,
 	AtRadioGroup,
-	AtRadioButton
+	AtRadioButton,
+	AtCheckbox,
+	AtCheckboxGroup,
+	AtCheckboxButton
 ];
 
 export default {
