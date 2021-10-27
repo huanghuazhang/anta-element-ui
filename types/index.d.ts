@@ -10,6 +10,7 @@ import { AtDropdown } from './AtDropdown';
 import { AtDropdownItem } from './AtDropdownItem';
 import { AtDropdownMenu } from './AtDropdownMenu';
 import { AtAlert } from './AtAlert';
+import { AtPopover } from './AtPopover';
 import { AtSkeleton } from './AtSkeleton';
 import { AtSkeletonItem } from './AtSkeletonItem';
 import { AtDialog } from './AtDialog';
@@ -33,6 +34,7 @@ export {
 	AtDropdownItem,
 	AtDropdownMenu,
 	AtAlert,
+	AtPopover,
 	AtSkeleton,
 	AtSkeletonItem,
 	AtDialog,

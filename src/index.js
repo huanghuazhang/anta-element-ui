@@ -22,8 +22,8 @@ import AtAutocomplete from './components/AtAutocomplete';
 import AtRadio from './components/AtRadio';
 import AtRadioGroup from './components/AtRadioGroup';
 import AtRadioButton from './components/AtRadioButton';
-
 import './components/AtMessageBox';
+import AtPopover from './components/AtPopover';
 
 export * from 'element-ui';
 export {
@@ -39,6 +39,7 @@ export {
 	AtSteps,
 	AtStep,
 	AtAlert,
+	AtPopover,
 	AtSkeleton,
 	AtSkeletonItem,
 	AtDialog,
@@ -64,6 +65,7 @@ const components = [
 	AtSteps,
 	AtStep,
 	AtAlert,
+	AtPopover,
 	AtSkeleton,
 	AtSkeletonItem,
 	AtDialog,

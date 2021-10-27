@@ -2,9 +2,26 @@
 	display: block;
 }
 .at-autocomplete-suggestion {
+	padding: 0 0;
+	border-radius: $--border-radius-small;
+	box-shadow: $--box-shadow-base;
+	border: 0;
+	&--hide-arrow {
+		.popper__arrow {
+			display: none;
+		}
+	}
+
+	&[x-placement^='bottom'] {
+		margin-top: 5px;
+	}
+	&[x-placement^='top'] {
+		margin-bottom: 5px;
+	}
 	.el-autocomplete-suggestion__wrap {
 		padding: 0;
 	}
+	
 	&.is-loading {
 		li {
 			display: flex;

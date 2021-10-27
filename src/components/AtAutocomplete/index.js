@@ -21,10 +21,11 @@ const AtAutocomplete = {
 
 		if (element?.children[1]) {
 			element?.children[1]?.data?.class?.push('at-autocomplete-suggestion');
-			element?.children[1]?.data?.class?.push('at-popper');
 
 			if (this.visibleArrow === false) {
-				element?.children[1]?.data?.class?.push('at-popper--hide-arrow');
+				element?.children[1]?.data?.class?.push(
+					'at-autocomplete-suggestion--hide-arrow'
+				);
 			}
 		}
 		return element;
