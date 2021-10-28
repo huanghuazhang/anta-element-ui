@@ -14,6 +14,11 @@ const AtDropdownMenu = {
 	render(...args) {
 		const element = withStaticClass(this, ElDropdownMenu, ...args);
 
+		if (!element.data.style) {
+			element.data.style = {};
+		}
+		element.data.style.minWidth = `${this.referenceElm?.offsetWidth ?? 0}px`;
+
 		element.data.staticClass = 'at-dropdown-menu';
 
 		return element;

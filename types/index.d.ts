@@ -22,6 +22,9 @@ import { AtAutocomplete } from './AtAutocomplete';
 import { AtRadio } from './AtRadio';
 import { AtRadioGroup } from './AtRadioGroup';
 import { AtRadioButton } from './AtRadioButton';
+import { AtSelect } from './AtSelect';
+import { AtOption } from './AtOption';
+import { AtOptionGroup } from './AtOptionGroup';
 
 export {
 	AtButton,
@@ -44,6 +47,9 @@ export {
 	AtAutocomplete,
 	AtRadio,
 	AtRadioGroup,
-	AtRadioButton
+	AtRadioButton,
+	AtSelect,
+	AtOption,
+	AtOptionGroup
 };
 export default AntaElementUI;

@@ -27,6 +27,9 @@ import AtPopover from './components/AtPopover';
 import AtCheckbox from './components/AtCheckbox';
 import AtCheckboxGroup from './components/AtCheckboxGroup';
 import AtCheckboxButton from './components/AtCheckboxButton';
+import AtSelect from './components/AtSelect';
+import AtOption from './components/AtOption';
+import AtOptionGroup from './components/AtOptionGroup';
 
 export * from 'element-ui';
 export {
@@ -55,7 +58,10 @@ export {
 	AtRadioButton,
 	AtCheckbox,
 	AtCheckboxGroup,
-	AtCheckboxButton
+	AtCheckboxButton,
+	AtSelect,
+	AtOption,
+	AtOptionGroup
 };
 
 const components = [
@@ -84,7 +90,10 @@ const components = [
 	AtRadioButton,
 	AtCheckbox,
 	AtCheckboxGroup,
-	AtCheckboxButton
+	AtCheckboxButton,
+	AtSelect,
+	AtOption,
+	AtOptionGroup
 ];
 
 export default {
