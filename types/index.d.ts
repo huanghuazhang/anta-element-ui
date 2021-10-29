@@ -25,6 +25,7 @@ import { AtRadioButton } from './AtRadioButton';
 import { AtSelect } from './AtSelect';
 import { AtOption } from './AtOption';
 import { AtOptionGroup } from './AtOptionGroup';
+import { AtCascader } from './AtCascader';
 
 export {
 	AtButton,
@@ -50,6 +51,7 @@ export {
 	AtRadioButton,
 	AtSelect,
 	AtOption,
-	AtOptionGroup
+	AtOptionGroup,
+	AtCascader
 };
 export default AntaElementUI;

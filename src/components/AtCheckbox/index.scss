@@ -1,0 +1,91 @@
+
+.at-checkbox {
+	.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+		background-color: $--color-white;
+		&:before {
+			top: 6px;
+			background-color: $--color-primary;
+			transform: scale(1);
+			width: 66%;
+			height: 1;
+			margin: 0 auto;
+		}
+	}
+	.el-checkbox__label {
+		padding-left: 8px;
+		vertical-align: top;
+	}
+
+	.el-checkbox__inner {
+		width: 16px;
+		height: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $--color-white;
+		transition: background-color 100ms ease, border-color 100ms ease;
+	}
+
+	.el-checkbox__input {
+		&.is-checked {
+			.el-checkbox__inner:after {
+				display: none;
+			}
+			.el-checkbox__inner:before {
+				font-family: antaicons !important;
+				content: '\e651';
+				font-weight: bold;
+				font-size: 12px;
+				transform: scale(0.85);
+				position: relative;
+				top: 1px;
+			}
+		}
+		&.is-disabled {
+			.el-checkbox__inner {
+				background-color: $--background-color-base;
+				color: $--border-color-base;
+			}
+		}
+	}
+}
+.at-checkbox-button {
+	&:first-child .el-checkbox-button__inner {
+		border-radius: 2px 0 0 2px;
+	}
+	&:last-child .el-checkbox-button__inner {
+		border-radius: 0 2px 2px 0;
+	}
+	&.is-checked .el-checkbox-button__inner {
+		color: $--color-primary;
+		background-color: $--color-b1;
+	}
+	&.is-disabled .el-checkbox-button__inner {
+		background-color: $--background-color-base;
+		color: $--color-text-placeholder;
+		border-color: $--border-color-base;
+	}
+	&.is-disabled:first-child .el-checkbox-button__inner {
+		border-left-color: $--border-color-base;
+	}
+	&.is-disabled.is-checked .el-checkbox-button__inner {
+		background-color: $--border-color-lighter;
+	}
+	.el-checkbox-button__inner {
+		font-size: 16px;
+		color: $--color-text-secondary;
+		padding: 11px 20px;
+	}
+	&.el-checkbox-button--medium .el-checkbox-button__inner {
+		font-size: 14px;
+		padding: 10px 17px;
+	}
+	&.el-checkbox-button--small .el-checkbox-button__inner {
+		font-size: 14px;
+		padding: 8px 15px;
+	}
+	&.el-checkbox-button--mini .el-checkbox-button__inner {
+		font-size: 14px;
+		padding: 4px 7px;
+	}
+}

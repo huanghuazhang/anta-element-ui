@@ -30,6 +30,7 @@ import AtCheckboxButton from './components/AtCheckboxButton';
 import AtSelect from './components/AtSelect';
 import AtOption from './components/AtOption';
 import AtOptionGroup from './components/AtOptionGroup';
+import AtCascader from './components/AtCascader';
 
 export * from 'element-ui';
 export {
@@ -61,7 +62,8 @@ export {
 	AtCheckboxButton,
 	AtSelect,
 	AtOption,
-	AtOptionGroup
+	AtOptionGroup,
+	AtCascader
 };
 
 const components = [
@@ -93,7 +95,8 @@ const components = [
 	AtCheckboxButton,
 	AtSelect,
 	AtOption,
-	AtOptionGroup
+	AtOptionGroup,
+	AtCascader
 ];
 
 export default {

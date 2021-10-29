@@ -1,0 +1,113 @@
+.at-select {
+	.el-input {
+		.el-input__inner {
+			border-radius: $--border-radius-small;
+			padding: 0 12px;
+		}
+		&.is-focus {
+			.el-input__inner {
+				box-shadow: 0px 0px 4px 0px rgba(10, 42, 97, 0.2);
+			}
+		}
+		&.is-disabled {
+			.el-input__inner {
+				border-color: $--border-color-base;
+			}
+			.el-select__caret.el-input__icon.el-icon-arrow-up {
+				color: $--color-text-placeholder;
+			}
+		}
+		.el-select__caret.el-input__icon {
+			&.el-icon-arrow-up {
+				font-family: antaicons !important;
+				font-size: 12px;
+				color: $--color-text-regular;
+
+				&:before {
+					display: flex;
+					height: 100%;
+					align-items: center;
+					justify-content: center;
+
+					transform: scale(0.85);
+					content: '\e64f';
+				}
+			}
+			&.el-icon-circle-close {
+				font-family: antaicons !important;
+				font-size: 14px;
+				color: $--border-color-base;
+
+				&:before {
+					content: '\e659';
+				}
+			}
+		}
+	}
+	.el-select__tags {
+		.el-tag {
+			color: $--color-text-primary;
+			background-color: $--color-white;
+			border-color: $--border-color-base;
+			border-radius: $--border-radius-small;
+			&__close {
+				background-color: transparent;
+				transition: background-color 300ms ease, color 300ms ease;
+				&:before {
+					font-family: antaicons !important;
+					content: '\e658';
+				}
+			}
+		}
+	}
+}
+.at-select-dropdown {
+	padding: 0 0;
+	border-radius: $--border-radius-small;
+	box-shadow: $--box-shadow-base;
+	border: 0;
+	&--hide-arrow {
+		.popper__arrow {
+			display: none;
+		}
+	}
+
+	&[x-placement^='bottom'] {
+		margin-top: 5px;
+	}
+	&[x-placement^='top'] {
+		margin-bottom: 5px;
+	}
+
+	.el-select-dropdown__list {
+		padding: 0 0 0 0;
+	}
+	.el-select-dropdown__empty {
+		color: $--color-text-placeholder;
+	}
+
+	&.is-multiple .at-select-dropdown__item {
+		&.selected::after {
+			right: 10px;
+		}
+	}
+
+	&__item {
+		line-height: 32px;
+		padding: 0 12px;
+		transition: background-color 300ms ease;
+		color: $--color-text-primary;
+
+		&:not(.is-disabled):hover,
+		&:focus {
+			background-color: $--color-b1;
+			color: $--color-text-primary;
+		}
+		&.selected:not(.is-disabled):hover,
+		&.selected:focus,
+		&.selected {
+			font-weight: normal;
+			color: $--color-primary;
+		}
+	}
+}

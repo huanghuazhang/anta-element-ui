@@ -25,10 +25,11 @@
 		line-height: 32px;
 		padding: 0 12px;
 		transition: background-color 300ms ease;
+		color: $--color-text-primary;
 		&:not(.is-disabled):hover,
 		&:focus {
 			background-color: $--color-b1;
-			color: $--color-text-regular;
+			color: $--color-text-primary;
 		}
 		&.el-dropdown-menu__item--divided {
 			margin-top: 2px;

@@ -34,9 +34,10 @@
 		line-height: 32px;
 		padding: 0 12px;
 		transition: background-color 300ms ease;
+		color: $--color-text-primary;
 		&:hover {
 			background-color: $--color-b1;
-			color: $--color-text-regular;
+			color: $--color-text-primary;
 		}
 	}
 }
