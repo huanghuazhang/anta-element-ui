@@ -7,6 +7,10 @@ const AtAutocomplete = {
 	name: 'AtAutocomplete',
 	props: {
 		...ElAutocomplete.props,
+		size: {
+			type: String,
+			default: 'small'
+		},
 		visibleArrow: {
 			type: Boolean,
 			default: false

@@ -10,6 +10,10 @@ const AtCascader = {
 		visibleArrow: {
 			type: Boolean,
 			default: false
+		},
+		size: {
+			type: String,
+			default: 'small'
 		}
 	},
 	components: {

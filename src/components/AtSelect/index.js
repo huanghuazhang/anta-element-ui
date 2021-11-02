@@ -11,6 +11,10 @@ const AtSelect = {
 			type: Boolean,
 			default: false
 		},
+		size: {
+			type: String,
+			default: 'small'
+		},
 		noMatchText: {
 			type: String,
 			default: '无搜索结果'

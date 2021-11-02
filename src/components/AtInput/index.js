@@ -4,6 +4,13 @@ import withStaticClass from '../../utils/withStaticClass';
 const AtInput = {
 	...ElInput,
 	name: 'AtInput',
+	props: {
+		...ElInput.props,
+		size: {
+			type: String,
+			default: 'small'
+		}
+	},
 	render(...args) {
 		const element = withStaticClass(this, ElInput, ...args);
 

@@ -6,6 +6,10 @@ const AtButton = {
 	name: 'AtButton',
 	props: {
 		...ElButton.props,
+		size: {
+			type: String,
+			default: 'small'
+		},
 		square: {
 			type: Boolean,
 			default: false

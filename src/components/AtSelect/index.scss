@@ -45,6 +45,9 @@
 		}
 	}
 	.el-select__tags {
+		.el-select__input {
+			margin: 0 0 0 12px;
+		}
 		.el-tag {
 			color: $--color-text-primary;
 			background-color: $--color-white;
