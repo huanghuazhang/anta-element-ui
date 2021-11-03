@@ -26,6 +26,7 @@ import { AtSelect } from './AtSelect';
 import { AtOption } from './AtOption';
 import { AtOptionGroup } from './AtOptionGroup';
 import { AtCascader } from './AtCascader';
+import { AtDatePicker } from './AtDatePicker';
 
 export {
 	AtButton,
@@ -52,6 +53,7 @@ export {
 	AtSelect,
 	AtOption,
 	AtOptionGroup,
-	AtCascader
+	AtCascader,
+	AtDatePicker
 };
 export default AntaElementUI;

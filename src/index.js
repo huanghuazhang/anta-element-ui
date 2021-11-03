@@ -1,4 +1,9 @@
 import ElementUI from 'element-ui';
+import locale from 'element-ui/src/locale';
+import lang from 'element-ui/lib/locale/lang/zh-CN';
+
+import withCustomMonthDatePicker from './utils/withCustomMonthDatePicker';
+
 import AtButton from './components/AtButton';
 import AtButtonGroup from './components/AtButtonGroup';
 import AtIcon from './components/AtIcon';
@@ -31,6 +36,7 @@ import AtSelect from './components/AtSelect';
 import AtOption from './components/AtOption';
 import AtOptionGroup from './components/AtOptionGroup';
 import AtCascader from './components/AtCascader';
+import AtDatePicker from './components/AtDatePicker';
 
 export * from 'element-ui';
 export {
@@ -63,7 +69,8 @@ export {
 	AtSelect,
 	AtOption,
 	AtOptionGroup,
-	AtCascader
+	AtCascader,
+	AtDatePicker
 };
 
 const components = [
@@ -96,13 +103,21 @@ const components = [
 	AtSelect,
 	AtOption,
 	AtOptionGroup,
-	AtCascader
+	AtCascader,
+	AtDatePicker
 ];
 
 export default {
 	...ElementUI,
-	install(Vue, opts = {}) {
+	install(
+		Vue,
+		opts = {
+			locale: withCustomMonthDatePicker(lang)
+		}
+	) {
 		ElementUI.install(Vue, opts);
+		locale.use(opts.locale);
+		locale.i18n(opts.i18n);
 
 		components.forEach(component => {
 			Vue.component(component.name, component);

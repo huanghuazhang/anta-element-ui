@@ -8,7 +8,7 @@ const AtAlert = {
 		...ElAlert.props,
 		small: {
 			type: Boolean,
-			value: false
+			default: false
 		}
 	},
 	render(...args) {

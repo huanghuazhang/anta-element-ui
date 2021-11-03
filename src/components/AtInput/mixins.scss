@@ -1,0 +1,67 @@
+
+@mixin at-input-inner {
+	color: $--color-text-primary;
+	border-radius: $--border-radius-small;
+	padding: 0 12px;
+	&[type='text'] + .el-input__suffix,
+	&[type='text'] + .el-input__prefix + .el-input__suffix {
+		.el-icon-view {
+			&:before {
+				content: '\e6ab';
+			}
+		}
+	}
+	&.is-active,
+	&:focus {
+		box-shadow: 0px 0px 4px 0px rgba(10, 42, 97, 0.2),
+			100px 100px 100px #fff inset;
+	}
+}
+
+@mixin at-input {
+	.el-input__inner {
+		@include at-input-inner();
+	}
+	.el-input-group__append,
+	.el-input-group__prepend {
+		color: $--color-text-regular;
+		padding: 0 10px;
+	}
+	.el-input-group__append {
+		border-radius: 0 $--border-radius-small $--border-radius-small 0;
+	}
+	.el-input-group__prepend {
+		border-radius: $--border-radius-small 0 0 $--border-radius-small;
+	}
+	&.el-input--small {
+		font-size: 14px;
+	}
+	&.el-input--prefix {
+		.el-input__inner {
+			padding-left: 30px;
+		}
+	}
+	&.el-input--suffix {
+		.el-input__inner {
+			padding-right: 30px;
+		}
+	}
+
+	.el-input__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $--color-text-secondary;
+
+		&[class*=' at-icon-']:before {
+			transform: scale(1);
+		}
+		&.el-icon-view {
+			font-size: 12px;
+			&:before {
+				font-family: 'antaicons';
+				content: '\e6aa';
+			}
+		}
+	}
+}
