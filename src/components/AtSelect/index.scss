@@ -42,6 +42,9 @@
 					content: '\e659';
 				}
 			}
+			&:after {
+				display: none;
+			}
 		}
 	}
 	.el-select__tags {
