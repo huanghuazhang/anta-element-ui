@@ -1,5 +1,4 @@
 .at-date-editor {
-
 	&.at-input {
 		width: 240px;
 		&.el-input--suffix {
@@ -111,6 +110,20 @@
 	}
 	.el-date-table {
 		font-size: 14px;
+		&.is-week-mode .el-date-table__row:hover div,
+		&.is-week-mode .el-date-table__row.current div {
+			background-color: $--color-b1;
+		}
+		&.is-week-mode .el-date-table__row:hover td:first-child div {
+			margin-left: 0;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+		&.is-week-mode .el-date-table__row:hover td:last-child div {
+			margin-right: 0;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
 		th {
 			border-bottom-width: 0;
 			color: $--color-text-secondary;
@@ -134,7 +147,7 @@
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 		}
-		td:not(.disabled) {
+		td:not(.disabled):not(.start-date):not(.end-date) {
 			span {
 				&:hover {
 					background-color: $--color-b1;
@@ -150,12 +163,18 @@
 			background-color: $--color-primary;
 			color: $--color-white;
 		}
+		td.in-range div {
+			background-color: $--color-b1;
+		}
 	}
 
 	.el-month-table {
 		font-size: 14px;
 		td {
 			padding: 5px 0;
+			&.in-range div {
+				background-color: $--color-b1;
+			}
 			div {
 				padding: 5px 5px;
 				height: auto;
@@ -176,6 +195,8 @@
 			height: 30px;
 			line-height: 30px;
 			transition: background-color 300ms ease, color 300ms ease;
+		}
+		td:not(.disabled):not(.start-date):not(.end-date) .cell {
 			&:hover {
 				background-color: $--color-b1;
 				color: $--color-text-primary;
