@@ -1,0 +1,100 @@
+.at-date-picker {
+	&.el-time-panel {
+		width: 240px;
+	}
+	.el-time-panel__footer {
+		padding: 8px;
+		height: auto;
+	}
+	&.el-time-range-picker {
+		width: 500px;
+
+		.el-time-range-picker__header {
+			display: none;
+		}
+		.el-time-range-picker__content {
+			padding: 0;
+			.el-time-range-picker__cell {
+				padding: 0 20px 0 0;
+				vertical-align: top;
+				.el-time-range-picker__body {
+					border-radius: 0;
+					border-width: 0;
+					border-right-width: 1px;
+				}
+				&:last-child {
+					padding: 0 0 0 0;
+					.el-time-range-picker__body {
+						border-left-width: 1px;
+					}
+				}
+			}
+		}
+	}
+	&.el-time-range-picker,
+	.el-time-panel,
+	&.el-time-panel {
+		.el-time-spinner__item {
+			transition: background-color 300ms ease;
+			font-size: 14px;
+			color: $--color-text-primary;
+			&:not(.disabled):not(.active):hover,
+			&:not(.disabled):not(.active).hover,
+			&:focus {
+				background-color: $--color-b1;
+				color: $--color-text-primary;
+			}
+			&.active:hover,
+			&.active {
+				// font-weight: normal;
+				// color: $--color-primary;
+			}
+			&.disabled {
+				color: $--color-text-placeholder;
+			}
+		}
+		.el-time-panel__content:before {
+			margin-left: 0;
+			margin-right: 0;
+			border-bottom-width: 0;
+			border-top-width: 0;
+			background-color: $--border-color-extra-light;
+		}
+		.el-time-panel__content:after {
+			margin-left: 0;
+			margin-right: 0;
+			border-bottom-width: 0;
+			border-top-width: 0;
+		}
+		.el-time-spinner__wrapper {
+			border-right: 1px solid $--border-color-base;
+			&:last-child {
+				border-right-width: 0;
+			}
+		}
+	}
+	&.time-select {
+		.el-picker-panel__content {
+			width: auto;
+			.time-select-item {
+				padding: 7px 12px;
+				transition: background-color 300ms ease;
+				color: $--color-text-primary;
+				&:not(.is-disabled):hover,
+				&:not(.is-disabled).hover,
+				&:focus {
+					font-weight: normal;
+					background-color: $--color-b1;
+					color: $--color-text-primary;
+				}
+				&.selected:not(.is-disabled):hover,
+				&.selected:not(.is-disabled).hover,
+				&.selected:focus,
+				&.selected {
+					font-weight: normal;
+					color: $--color-primary;
+				}
+			}
+		}
+	}
+}

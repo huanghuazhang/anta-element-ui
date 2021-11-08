@@ -6,10 +6,11 @@ import DateRangePanel from 'element-ui/packages/date-picker/src/panel/date-range
 import MonthRangePanel from 'element-ui/packages/date-picker/src/panel/month-range';
 
 import withStaticClass from '../../utils/withStaticClass';
-import AtInput from '../AtInput';
-import AtButton from '../AtButton';
 import DateRangeTemplate from './DateRangeTemplate';
 import DateTemplate from './DateTemplate';
+import withComponents from './withComponents';
+import withProps from './withProps';
+import withComputed from './withComputed';
 
 const getPanel = function(type) {
 	let panel = {
@@ -33,14 +34,6 @@ const getPanel = function(type) {
 	});
 };
 
-const withComponents = components => {
-	return {
-		...components,
-		ElInput: AtInput,
-		ElButton: AtButton
-	};
-};
-
 const AtDatePicker = {
 	...ElDatePicker,
 	name: 'AtDatePicker',
@@ -48,38 +41,14 @@ const AtDatePicker = {
 		...ElPicker.components,
 		...ElDatePicker.components
 	}),
-	props: {
-		...ElDatePicker.props,
-		popperClass: {
-			type: String,
-			default: 'at-date-picker'
-		},
-		clearIcon: {
-			type: String,
-			default: 'at-icon-close-circle'
-		},
-		rangeSeparator: {
-			type: String,
-			default: '至'
-		},
-		size: {
-			type: String,
-			default: 'small'
-		}
-	},
-	computed: {
+	props: withProps({
+		...ElPicker.props,
+		...ElDatePicker.props
+	}),
+	computed: withComputed({
 		...ElPicker.computed,
-		...ElDatePicker.computed,
-
-		triggerClass() {
-			return (
-				this.prefixIcon ||
-				(this.type.indexOf('time') !== -1
-					? 'at-icon-time'
-					: 'at-icon-calendar-o')
-			);
-		}
-	},
+		...ElDatePicker.computed
+	}),
 	render(...args) {
 		const element = withStaticClass(this, ElPicker, ...args);
 

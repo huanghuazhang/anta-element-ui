@@ -104,8 +104,14 @@
 		transition: background-color 300ms ease;
 		color: $--color-text-primary;
 
+		&:not(.is-disabled).hover,
+		&.selected:not(.is-disabled).hover {
+			background-color: transparent;
+		}
 		&:not(.is-disabled):hover,
-		&:focus {
+		&:focus,
+		&.selected:not(.is-disabled):hover,
+		&.selected:focus {
 			background-color: $--color-b1;
 			color: $--color-text-primary;
 		}

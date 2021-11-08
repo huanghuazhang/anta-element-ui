@@ -1,4 +1,5 @@
 .at-date-editor {
+
 	&.at-input {
 		width: 240px;
 		&.el-input--suffix {
@@ -42,6 +43,7 @@
 			font-size: 14px;
 		}
 	}
+	&.at-range-editor.el-date-editor--timerange,
 	&.el-date-editor--datetimerange,
 	&.el-date-editor--monthrange,
 	&.el-date-editor--daterange {
