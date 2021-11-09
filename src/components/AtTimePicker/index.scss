@@ -2,9 +2,15 @@
 	&.el-time-panel {
 		width: 240px;
 	}
+
 	.el-time-panel__footer {
 		padding: 8px;
 		height: auto;
+	}
+	.el-date-range-picker__editors-wrap {
+		.el-time-panel__footer {
+			padding: 4px;
+		}
 	}
 	&.el-time-range-picker {
 		width: 500px;

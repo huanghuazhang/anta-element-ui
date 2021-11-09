@@ -90,10 +90,13 @@
 		}
 	}
 	&.el-date-range-picker {
-		width: 250px * 2;
+		width: (250px + 30px) * 2;
 		&.has-sidebar {
-			width: 250px * 2 + 110px;
+			width: (250px + 30px) * 2 + 110px;
 		}
+		.el-picker-panel__content {
+			width: 280px;
+		}	
 	}
 	.popper__arrow {
 		display: none;
@@ -244,6 +247,14 @@
 	}
 	.el-date-range-picker__header {
 		padding-bottom: 12px;
+	}
+	.el-date-range-picker__content.is-left {
+		border-right-width: 0;
+		padding-right: 5px;
+	}
+	.el-date-range-picker__content.is-right {
+		border-right-width: 0;
+		padding-left: 5px;
 	}
 	.el-date-picker__header-label {
 		font-weight: bold;
