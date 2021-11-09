@@ -2,6 +2,8 @@
 	box-shadow: $--box-shadow-light;
 	background-color: $--color-white;
 	border-width: 0;
+	min-width: 0;
+	padding: 14px 20px 14px 14px;
 	&__content {
 		color: $--color-primary;
 	}
