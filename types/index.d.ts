@@ -29,6 +29,11 @@ import { AtCascader } from './AtCascader';
 import { AtDatePicker } from './AtDatePicker';
 import { AtTimePicker } from './AtTimePicker';
 import { AtTimeSelect } from './AtTimeSelect';
+import { AtForm } from './AtForm';
+import { AtFormItem } from './AtFormItem';
+import { AtCol } from './AtCol';
+import { AtRow } from './AtRow';
+import { AtSwitch } from './AtSwitch';
 
 export {
 	AtButton,
@@ -59,5 +64,10 @@ export {
 	AtDatePicker,
 	AtTimePicker,
 	AtTimeSelect,
+	AtForm,
+	AtFormItem,
+	AtRow,
+	AtCol,
+	AtSwitch
 };
 export default AntaElementUI;

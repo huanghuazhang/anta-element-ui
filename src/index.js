@@ -39,6 +39,11 @@ import AtCascader from './components/AtCascader';
 import AtDatePicker from './components/AtDatePicker';
 import AtTimePicker from './components/AtTimePicker';
 import AtTimeSelect from './components/AtTimeSelect';
+import AtForm from './components/AtForm';
+import AtFormItem from './components/AtFormItem';
+import AtRow from './components/AtRow';
+import AtCol from './components/AtCol';
+import AtSwitch from './components/AtSwitch';
 
 export * from 'element-ui';
 export {
@@ -74,7 +79,12 @@ export {
 	AtCascader,
 	AtDatePicker,
 	AtTimePicker,
-	AtTimeSelect
+	AtTimeSelect,
+	AtForm,
+	AtFormItem,
+	AtRow,
+	AtCol,
+	AtSwitch
 };
 
 const components = [
@@ -110,7 +120,12 @@ const components = [
 	AtCascader,
 	AtDatePicker,
 	AtTimePicker,
-	AtTimeSelect
+	AtTimeSelect,
+	AtForm,
+	AtFormItem,
+	AtRow,
+	AtCol,
+	AtSwitch
 ];
 
 export default {
