@@ -34,6 +34,7 @@ import { AtFormItem } from './AtFormItem';
 import { AtCol } from './AtCol';
 import { AtRow } from './AtRow';
 import { AtSwitch } from './AtSwitch';
+import { AtRate } from './AtRate';
 
 export {
 	AtButton,
@@ -68,6 +69,7 @@ export {
 	AtFormItem,
 	AtRow,
 	AtCol,
-	AtSwitch
+	AtSwitch,
+	AtRate
 };
 export default AntaElementUI;

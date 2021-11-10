@@ -44,6 +44,7 @@ import AtFormItem from './components/AtFormItem';
 import AtRow from './components/AtRow';
 import AtCol from './components/AtCol';
 import AtSwitch from './components/AtSwitch';
+import AtRate from './components/AtRate';
 
 export * from 'element-ui';
 export {
@@ -84,7 +85,8 @@ export {
 	AtFormItem,
 	AtRow,
 	AtCol,
-	AtSwitch
+	AtSwitch,
+	AtRate
 };
 
 const components = [
@@ -125,7 +127,8 @@ const components = [
 	AtFormItem,
 	AtRow,
 	AtCol,
-	AtSwitch
+	AtSwitch,
+	AtRate
 ];
 
 export default {
