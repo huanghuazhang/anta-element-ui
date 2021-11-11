@@ -244,6 +244,9 @@
 
 	.el-date-range-picker__time-header {
 		padding: 6px 2px;
+		.el-date-range-picker__editor.el-input.at-input {
+			width: 100%;
+		}
 	}
 	.el-date-range-picker__header {
 		padding-bottom: 12px;

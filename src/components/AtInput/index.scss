@@ -1,6 +1,7 @@
 @import './mixins.scss';
 
 .at-textarea {
+	width: 240px;
 	.el-textarea__inner {
 		color: $--color-text-primary;
 		border-radius: $--border-radius-small;

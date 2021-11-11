@@ -2,6 +2,7 @@
 
 .at-input-number {
 	border-radius: $--border-radius-small;
+	width: 240px;
 	&.is-controls-right {
 		.el-input__inner {
 			text-align: left;

@@ -2,6 +2,7 @@
 @mixin at-input-inner {
 	color: $--color-text-primary;
 	border-radius: $--border-radius-small;
+	vertical-align: top;
 	padding: 0 12px;
 	&[type='text'] + .el-input__suffix,
 	&[type='text'] + .el-input__prefix + .el-input__suffix {
@@ -19,6 +20,7 @@
 }
 
 @mixin at-input {
+	width: 240px;
 	.el-input__inner {
 		@include at-input-inner();
 	}
