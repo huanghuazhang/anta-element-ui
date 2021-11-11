@@ -45,6 +45,8 @@ import AtRow from './components/AtRow';
 import AtCol from './components/AtCol';
 import AtSwitch from './components/AtSwitch';
 import AtRate from './components/AtRate';
+import AtSlider from './components/AtSlider';
+import AtInputNumber from './components/AtInputNumber';
 
 export * from 'element-ui';
 export {
@@ -86,7 +88,9 @@ export {
 	AtRow,
 	AtCol,
 	AtSwitch,
-	AtRate
+	AtRate,
+	AtSlider,
+	AtInputNumber
 };
 
 const components = [
@@ -128,7 +132,9 @@ const components = [
 	AtRow,
 	AtCol,
 	AtSwitch,
-	AtRate
+	AtRate,
+	AtSlider,
+	AtInputNumber
 ];
 
 export default {

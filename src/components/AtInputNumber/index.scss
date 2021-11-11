@@ -1,0 +1,62 @@
+@import '../AtInput/mixins.scss';
+
+.at-input-number {
+	border-radius: $--border-radius-small;
+	&.is-controls-right {
+		.el-input__inner {
+			text-align: left;
+			padding-left: 12px;
+			padding-right: 30px + 12px;
+		}
+		.el-input-number__decrease,
+		.el-input-number__increase {
+			width: 30px;
+			background-color: transparent;
+			transition: background-color 300ms ease;
+		}
+		&:not(.is-disabled) {
+			.el-input-number__decrease:not(.is-disabled),
+			.el-input-number__increase:not(.is-disabled) {
+				&:hover {
+					background-color: $--background-color-base;
+					color: $--color-text-regular;
+				}
+			}
+		}
+		&.el-input-number--medium {
+			.el-input-number__decrease,
+			.el-input-number__increase {
+				width: 28px;
+			}
+			.el-input__inner {
+				padding-right: 28px + 12px;
+			}
+		}
+		&.el-input-number--small {
+			.el-input-number__decrease,
+			.el-input-number__increase {
+				width: 25px;
+			}
+			.el-input__inner {
+				padding-right: 25px + 12px;
+			}
+		}
+		&.el-input-number--mini {
+			.el-input-number__decrease,
+			.el-input-number__increase {
+				width: 22px;
+			}
+			.el-input__inner {
+				padding-right: 22px + 12px;
+			}
+		}
+		&.is-disabled {
+			.el-input-number__increase {
+				border-bottom-color: $--border-color-light;
+			}
+		}
+	}
+	.el-input__inner {
+		@include at-input-inner();
+	}
+}

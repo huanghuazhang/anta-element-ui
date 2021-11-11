@@ -35,6 +35,8 @@ import { AtCol } from './AtCol';
 import { AtRow } from './AtRow';
 import { AtSwitch } from './AtSwitch';
 import { AtRate } from './AtRate';
+import { AtSlider } from './AtSlider';
+import { AtInputNumber } from './AtInputNumber';
 
 export {
 	AtButton,
@@ -70,6 +72,8 @@ export {
 	AtRow,
 	AtCol,
 	AtSwitch,
-	AtRate
+	AtRate,
+	AtSlider,
+	AtInputNumber
 };
 export default AntaElementUI;
