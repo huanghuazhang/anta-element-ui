@@ -2,6 +2,7 @@
 .at-checkbox {
 	color: $--color-text-primary;
 	font-weight: normal;
+	font-size: 0;
 	.el-checkbox__input.is-indeterminate .el-checkbox__inner {
 		background-color: $--color-white;
 		&:before {
@@ -14,6 +15,7 @@
 	}
 	.el-checkbox__label {
 		padding-left: 8px;
+		line-height: 18px;
 		vertical-align: middle;
 	}
 
@@ -28,7 +30,6 @@
 	}
 
 	.el-checkbox__input {
-		top: 1px;
 		&.is-checked {
 			.el-checkbox__inner:after {
 				display: none;
