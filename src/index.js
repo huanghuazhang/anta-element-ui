@@ -48,6 +48,7 @@ import AtRate from './components/AtRate';
 import AtSlider from './components/AtSlider';
 import AtInputNumber from './components/AtInputNumber';
 import AtTransfer from './components/AtTransfer';
+import AtUpload from './components/AtUpload';
 
 export * from 'element-ui';
 export {
@@ -92,7 +93,8 @@ export {
 	AtRate,
 	AtSlider,
 	AtInputNumber,
-	AtTransfer
+	AtTransfer,
+	AtUpload
 };
 
 const components = [
@@ -137,7 +139,8 @@ const components = [
 	AtRate,
 	AtSlider,
 	AtInputNumber,
-	AtTransfer
+	AtTransfer,
+	AtUpload
 ];
 
 export default {

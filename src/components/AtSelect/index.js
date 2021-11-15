@@ -18,6 +18,10 @@ const AtSelect = {
 		noMatchText: {
 			type: String,
 			default: '无搜索结果'
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	},
 	computed: {
@@ -40,6 +44,10 @@ const AtSelect = {
 				dropdown.data.class.push('at-select-dropdown--hide-arrow');
 			}
 		}
+
+		element.data.class.push({
+			'is-block': this.block
+		});
 
 		return element;
 	}

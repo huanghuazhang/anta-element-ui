@@ -1,6 +1,10 @@
 .at-date-picker {
 	&.el-time-panel {
 		width: 240px;
+		&.is-block {
+			display: block;
+			width: 100%;
+		}
 	}
 
 	.el-time-panel__footer {

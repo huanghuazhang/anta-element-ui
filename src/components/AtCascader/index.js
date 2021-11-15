@@ -14,6 +14,10 @@ const AtCascader = {
 		size: {
 			type: String,
 			default: 'small'
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	},
 	components: {
@@ -34,6 +38,9 @@ const AtCascader = {
 				dropdown.data.class.push('at-cascader__dropdown--hide-arrow');
 			}
 		}
+		element.data.class.push({
+			'is-block': this.block
+		});
 
 		return element;
 	}

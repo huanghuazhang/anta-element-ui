@@ -16,6 +16,10 @@ export default function withProps(props) {
 		size: {
 			type: String,
 			default: 'small'
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	};
 }

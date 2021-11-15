@@ -14,6 +14,10 @@ const AtAutocomplete = {
 		visibleArrow: {
 			type: Boolean,
 			default: false
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	},
 	components: {
@@ -22,6 +26,13 @@ const AtAutocomplete = {
 	},
 	render(...args) {
 		const element = withStaticClass(this, ElAutocomplete, ...args);
+
+		if (!element.data.class) {
+			element.data.class = [];
+		}
+		element.data.class.push({
+			'is-block': this.block
+		});
 
 		if (element?.children[1]) {
 			element?.children[1]?.data?.class?.push('at-autocomplete-suggestion');

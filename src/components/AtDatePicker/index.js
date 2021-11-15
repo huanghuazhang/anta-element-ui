@@ -52,6 +52,13 @@ const AtDatePicker = {
 	render(...args) {
 		const element = withStaticClass(this, ElPicker, ...args);
 
+		if (typeof element.data.class === 'string') {
+			element.data.class = [element.data.class];
+		}
+		element.data.class.push({
+			'is-block': this.block
+		});
+
 		return element;
 	},
 	watch: {

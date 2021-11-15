@@ -1,6 +1,10 @@
 
 .at-cascader {
 	width: 240px;
+	&.is-block {
+		display: block;
+		width: 100%;
+	}
 	.el-input {
 		.el-input__inner {
 			border-radius: $--border-radius-small;

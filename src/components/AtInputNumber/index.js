@@ -13,10 +13,18 @@ const AtInputNumber = {
 		controlsPosition: {
 			type: String,
 			default: 'right'
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	},
 	render(...args) {
 		const element = withStaticClass(this, ElInputNumber, ...args);
+
+		element.data.class.push({
+			'is-block': this.block
+		});
 
 		return element;
 	}

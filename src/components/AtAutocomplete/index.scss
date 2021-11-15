@@ -1,5 +1,11 @@
 .at-autocomplete {
-	display: block;
+	&.is-block {
+		display: block;
+		width: 100%;
+		.el-input {
+			width: 100%;
+		}
+	}
 }
 .at-autocomplete-suggestion {
 	padding: 0 0;

@@ -1,11 +1,14 @@
 .at-select {
 	width: 240px;
+	&.is-block {
+		display: block;
+		width: 100%;
+	}
 	.el-input {
 		.el-input__inner {
 			border-radius: $--border-radius-small;
 			padding: 0 12px;
-		
-		}	
+		}
 		&__suffix-inner {
 			display: block;
 		}
