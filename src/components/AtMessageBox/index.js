@@ -1,7 +1,7 @@
 const { MessageBox } = require('element-ui');
 
 MessageBox.setDefaults({
-	title: null,
+	title: '',
 	message: '',
 	type: '',
 	iconClass: '',

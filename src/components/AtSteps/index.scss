@@ -1,4 +1,6 @@
 
+@import '../AtIcon/mixins.scss';
+
 .at-steps {
 	&.el-steps--simple {
 		padding: 0 0;
@@ -282,19 +284,13 @@
 			color: $--color-white;
 		}
 		.el-icon-check {
-			font-family: antaicons !important;
 			font-size: 12px;
-			&:before {
-				content: '\e651';
-			}
+			@include at-icon-check();
 		}
 		.el-icon-close {
-			font-family: antaicons !important;
 			font-size: 24px;
 			transform: translateY(0);
-			&:before {
-				content: '\e660';
-			}
+			@include at-icon-error-circle();
 		}
 	}
 }

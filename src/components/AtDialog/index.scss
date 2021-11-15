@@ -13,13 +13,10 @@
 		right: 16px;
 	}
 	.el-dialog__close {
-		font-family: antaicons !important;
 		&.el-icon-close {
 			color: $--color-text-primary;
 			top: 18px;
-			&:before {
-				content: '\e658';
-			}
+			@include  at-icon-close();
 		}
 	}
 	.el-dialog__title {

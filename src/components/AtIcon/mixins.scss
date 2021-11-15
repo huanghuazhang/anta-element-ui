@@ -1,0 +1,96 @@
+@mixin scale-size {
+	&:before {
+		display: block;
+		transform: scale((12/14));
+	}
+}
+
+@mixin at-icon-check-circle-o {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e65d';
+	}
+}
+@mixin at-icon-warning {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e6a1';
+	}
+}
+
+@mixin at-icon-close-circle {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e659';
+	}
+}
+
+@mixin at-icon-info-circle {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e666';
+	}
+}
+
+@mixin at-icon-check {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e651';
+	}
+}
+
+@mixin at-icon-caret-down {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e65b';
+	}
+}
+
+@mixin at-icon-close {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e658';
+	}
+}
+
+@mixin at-icon-right {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e681';
+	}
+}
+
+@mixin at-icon-eye-close {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e6ab';
+	}
+}
+
+@mixin at-icon-eye {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e6aa';
+	}
+}
+
+@mixin at-icon-caret-up {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e64f';
+	}
+}
+
+@mixin at-icon-error-circle {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e660';
+	}
+}
+
+@mixin at-icon-check-circle {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e66a';
+	}
+}

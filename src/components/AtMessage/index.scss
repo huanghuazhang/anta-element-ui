@@ -1,3 +1,5 @@
+@import '../AtIcon/mixins.scss';
+
 .el-message {
 	box-shadow: $--box-shadow-light;
 	background-color: $--color-white;
@@ -12,29 +14,24 @@
 			color: $--color-primary;
 		}
 	}
+	&__closeBtn {
+		font-size: 12px;
+		color: $--color-text-primary;
+	}
 	&__icon {
-		font-family: antaicons !important;
 		font-size: 13px;
 		&.el-icon-info {
 			color: $--color-primary;
-			&:before {
-				content: '\e666';
-			}
+			@include at-icon-info-circle();
 		}
 		&.el-icon-success {
-			&:before {
-				content: '\e66a';
-			}
+			@include at-icon-check-circle();
 		}
 		&.el-icon-error {
-			&:before {
-				content: '\e659';
-			}
+			@include at-icon-close-circle();
 		}
 		&.el-icon-warning {
-			&:before {
-				content: '\e6a1';
-			}
+			@include at-icon-warning();
 		}
 	}
 }

@@ -5,7 +5,11 @@ const AtUpload = {
 	...ElUpload,
 	name: 'AtUpload',
 	props: {
-		...ElUpload.props
+		...ElUpload.props,
+		block: {
+			type: Boolean,
+			default: false
+		}
 	},
 	render(...args) {
 		const element = withStaticClass(
@@ -68,7 +72,9 @@ const AtUpload = {
 					const uploadComponent = <upload {...uploadData}>{trigger}</upload>;
 
 					return (
-						<div>
+						<div
+							class={['at-upload', this.block ? 'is-block' : '', this.listType]}
+						>
 							{uploadList}
 							{this.$slots.trigger
 								? [uploadComponent, this.$slots.default]

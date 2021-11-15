@@ -1,5 +1,12 @@
 import ElAlert from 'element-ui/packages/alert/src/main';
 import withStaticClass from '../../utils/withStaticClass';
+import AlertTemplate from './AlertTemplate.vue';
+
+const TYPE_CLASSES_MAP = {
+	success: 'at-icon-check-circle',
+	warning: 'at-icon-warning',
+	error: 'at-icon-close-circle'
+};
 
 const AtAlert = {
 	...ElAlert,
@@ -11,8 +18,23 @@ const AtAlert = {
 			default: false
 		}
 	},
+	computed: {
+		...ElAlert.computed,
+
+		iconClass() {
+			return TYPE_CLASSES_MAP[this.type] || 'at-icon-info-circle';
+		}
+	},
+	staticRenderFns: AlertTemplate.staticRenderFns,
 	render(...args) {
-		const element = withStaticClass(this, ElAlert, ...args);
+		const element = withStaticClass(
+			this,
+			{
+				...ElAlert,
+				render: AlertTemplate.render
+			},
+			...args
+		);
 
 		element.data.staticClass = 'at-alert';
 

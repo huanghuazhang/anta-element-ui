@@ -1,3 +1,4 @@
+@import '../AtIcon/mixins.scss';
 
 .at-message-box {
 	box-shadow: $--box-shadow-base;
@@ -9,37 +10,25 @@
 		right: 16px;
 	}
 	.el-message-box__close {
-		font-family: antaicons !important;
 		&.el-icon-close {
 			color: $--color-text-primary;
 			top: 18px;
-			&:before {
-				content: '\e658';
-			}
+			@include at-icon-close();
 		}
 	}
 	.el-message-box__status {
-		font-family: antaicons !important;
 		font-size: 18px !important;
 		&.el-icon-info {
-			&:before {
-				content: '\e666';
-			}
+			@include at-icon-info-circle();
 		}
 		&.el-icon-success {
-			&:before {
-				content: '\e66a';
-			}
+			@include at-icon-check-circle ();
 		}
 		&.el-icon-error {
-			&:before {
-				content: '\e659';
-			}
+			@include at-icon-close-circle();
 		}
 		&.el-icon-warning {
-			&:before {
-				content: '\e6a1';
-			}
+			@include at-icon-warning();
 		}
 		& + .el-message-box__message {
 			padding-left: 30px;
@@ -50,6 +39,9 @@
 		font-weight: 500;
 		color: $--color-text-primary;
 		line-height: 20px;
+		span:after {
+			content: '　';
+		}
 	}
 	.el-message-box__header {
 		border-bottom: 1px solid $--border-color-base;

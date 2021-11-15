@@ -1,3 +1,4 @@
+@import '../AtIcon/mixins.scss';
 
 .at-checkbox {
 	color: $--color-text-primary;
@@ -34,14 +35,15 @@
 			.el-checkbox__inner:after {
 				display: none;
 			}
-			.el-checkbox__inner:before {
-				font-family: antaicons !important;
-				content: '\e651';
-				font-weight: bold;
-				font-size: 12px;
-				transform: scale(0.85);
-				position: relative;
-				top: 1px;
+			.el-checkbox__inner {
+				@include scale-size();
+				@include at-icon-check();
+				&:before {
+					font-weight: bold;
+					font-size: 12px;
+					position: relative;
+					top: 1px;
+				}
 			}
 		}
 		&.is-disabled {

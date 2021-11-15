@@ -1,25 +1,20 @@
+@import '../AtIcon/mixins.scss';
+
 .at-progress {
 	.el-progress__text {
 		font-weight: 500;
 		color: $--color-primary;
 		i {
-			font-family: antaicons !important;
 			&.el-icon-check,
 			&.el-icon-circle-check {
-				&:before {
-					content: '\e66a';
-				}
+				@include at-icon-check-circle();
 			}
 			&.el-icon-close,
 			&.el-icon-circle-close {
-				&:before {
-					content: '\e659';
-				}
+				@include at-icon-close-circle();
 			}
 			&.el-icon-warning {
-				&:before {
-					content: '\e6a1';
-				}
+				@include at-icon-warning();
 			}
 		}
 	}

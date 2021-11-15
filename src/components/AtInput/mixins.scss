@@ -1,3 +1,4 @@
+@import '../AtIcon/mixins.scss';
 
 @mixin at-input-inner {
 	color: $--color-text-primary;
@@ -7,9 +8,7 @@
 	&[type='text'] + .el-input__suffix,
 	&[type='text'] + .el-input__prefix + .el-input__suffix {
 		.el-icon-view {
-			&:before {
-				content: '\e6ab';
-			}
+			@include at-icon-eye-close();
 		}
 	}
 	&.is-active,
@@ -50,20 +49,21 @@
 	}
 
 	.el-input__icon {
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: center;
 		color: $--color-text-secondary;
+
+		&:last-child {
+			display: flex;
+		}
 
 		&[class*=' at-icon-']:before {
 			transform: scale(1);
 		}
 		&.el-icon-view {
 			font-size: 12px;
-			&:before {
-				font-family: 'antaicons';
-				content: '\e6aa';
-			}
+			@include at-icon-eye();
 		}
 	}
 }

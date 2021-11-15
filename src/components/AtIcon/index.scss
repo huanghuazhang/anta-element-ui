@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 [class*=' at-icon-'],
 [class^='at-icon-'] {
 	font-family: antaicons !important;
@@ -12,10 +14,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	&:before {
-		display: block;
-		transform: scale((12/14));
-	}
+	@include scale-size();
 }
 
 
