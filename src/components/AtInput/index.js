@@ -9,10 +9,18 @@ const AtInput = {
 		size: {
 			type: String,
 			default: 'small'
+		},
+		block: {
+			type: Boolean,
+			default: false
 		}
 	},
 	render(...args) {
 		const element = withStaticClass(this, ElInput, ...args);
+
+		element.data.class.push({
+			'is-block': this.block
+		});
 
 		return element;
 	}
