@@ -2,4 +2,17 @@
 	.el-form-item__label {
 		color: $--color-text-primary;
 	}
+	.el-form-item__tip {
+		margin-top: 5px;
+		font-size: 12px;
+		font-weight: 400;
+		color: $--color-text-secondary;
+		line-height: 18px;
+	}
+	&.el-form-item--small {
+		margin-bottom: 28px;
+		.el-form-item__error {
+			padding-top: 5px;
+		}
+	}
 }

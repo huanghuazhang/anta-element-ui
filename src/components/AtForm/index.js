@@ -4,6 +4,13 @@ import withStaticClass from '../../utils/withStaticClass';
 const AtForm = {
 	...ElForm,
 	name: 'AtForm',
+	props: {
+		...ElForm.props,
+		size: {
+			type: String,
+			default: 'small'
+		}
+	},
 	render(...args) {
 		const element = withStaticClass(this, ElForm, ...args);
 
