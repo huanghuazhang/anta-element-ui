@@ -1,5 +1,8 @@
 <template>
-	<at-image :style="style" v-bind="$props"></at-image>
+	<at-image
+		:style="{ ...style, borderRadius: '2px' }"
+		v-bind="$props"
+	></at-image>
 </template>
 
 <script>
