@@ -49,6 +49,10 @@ import AtSlider from './components/AtSlider';
 import AtInputNumber from './components/AtInputNumber';
 import AtTransfer from './components/AtTransfer';
 import AtUpload from './components/AtUpload';
+import AtImage from './components/AtImage';
+import AtCustomerImage from './components/AtImage/AtCustomerImage.vue';
+import AtGoodsImage from './components/AtImage/AtGoodsImage.vue';
+import AtVipImage from './components/AtImage/AtVipImage.vue';
 
 export * from 'element-ui';
 export {
@@ -94,7 +98,11 @@ export {
 	AtSlider,
 	AtInputNumber,
 	AtTransfer,
-	AtUpload
+	AtUpload,
+	AtImage,
+	AtCustomerImage,
+	AtGoodsImage,
+	AtVipImage
 };
 
 const components = [
@@ -140,7 +148,11 @@ const components = [
 	AtSlider,
 	AtInputNumber,
 	AtTransfer,
-	AtUpload
+	AtUpload,
+	AtImage,
+	AtCustomerImage,
+	AtGoodsImage,
+	AtVipImage
 ];
 
 export default {
