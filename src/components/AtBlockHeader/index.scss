@@ -1,0 +1,30 @@
+.at-block-header {
+	padding: 10px;
+	border-bottom: 1px solid $--border-color-lighter;
+	display: flex;
+	align-items: center;
+	&__title {
+		flex: 1;
+		font-weight: bold;
+	}
+	&--module {
+		background-color: $--background-color-base;
+		border-bottom-width: 0;
+		.at-block-header__title {
+			padding: 0 0 0 11px;
+			position: relative;
+			&:before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				content: '';
+				display: block;
+				width: 3px;
+				height: 70%;
+				background-color: $--color-primary;
+			}
+		}
+	}
+}

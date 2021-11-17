@@ -10,7 +10,7 @@
 			<div class="el-card__header__title">
 				<slot name="header">{{ header }}</slot>
 			</div>
-			<div class="el-card__header__right">
+			<div class="el-card__header__right" v-if="$slots.right || right">
 				<slot name="right">{{ right }}</slot>
 			</div>
 		</div>

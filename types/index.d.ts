@@ -40,6 +40,7 @@ import { AtInputNumber } from './AtInputNumber';
 import { AtUpload } from './AtUpload';
 import { AtImage } from './AtImage';
 import { AtCard } from './AtCard';
+import { AtBlockHeader } from './AtBlockHeader';
 
 export {
 	AtButton,
