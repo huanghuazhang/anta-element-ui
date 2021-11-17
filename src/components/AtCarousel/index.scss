@@ -1,0 +1,41 @@
+.at-carousel {
+	.el-carousel__mask {
+		opacity: 0.4;
+	}
+	.el-carousel__indicators.el-carousel__indicators--horizontal {
+		font-size: 0;
+		.el-carousel__indicator--horizontal {
+			padding: 16px 2px;
+			&.is-active {
+				.el-carousel__button {
+					width: 24px;
+					background-color: $--color-primary;
+				}
+			}
+		}
+		.el-carousel__button {
+			width: 16px;
+			height: 4px;
+			opacity: 1;
+			background-color: $--border-color-extra-light;
+		}
+	}
+	.el-carousel__indicators.el-carousel__indicators--vertical {
+		font-size: 0;
+		.el-carousel__indicator--vertical {
+			padding: 2px 16px;
+			&.is-active {
+				.el-carousel__button {
+					height: 24px;
+					background-color: $--color-primary;
+				}
+			}
+		}
+		.el-carousel__button {
+			width: 4px;
+			height: 16px;
+			opacity: 1;
+			background-color: $--border-color-extra-light;
+		}
+	}
+}

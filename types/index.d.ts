@@ -44,6 +44,8 @@ import { AtTitle } from './AtTitle';
 import { AtLineClamp } from './AtLineClamp';
 import { AtInfiniteScrollBottom } from './AtInfiniteScrollBottom';
 import { AtEmpty } from './AtEmpty';
+import { AtCarousel } from './AtCarousel';
+import { AtCarouselItem } from './AtCarouselItem';
 
 export {
 	AtButton,
@@ -88,6 +90,8 @@ export {
 	AtTitle,
 	AtLineClamp,
 	AtInfiniteScrollBottom,
-	AtEmpty
+	AtEmpty,
+	AtCarousel,
+	AtCarouselItem
 };
 export default AntaElementUI;

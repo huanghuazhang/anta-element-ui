@@ -21,7 +21,7 @@ export default function withStaticClass(scope, component, ...args) {
 	if (staticClass) {
 		ele.data.staticClass = `${staticClass} ${withAtClass(staticClass)}`;
 	} else if (cls) {
-		if (Array.isArray(cls)) {
+		if (Array.isArray(cls) && cls.indexOf(withAtClass(cls[0])) === -1) {
 			cls.push(withAtClass(cls[0]));
 		} else if (typeof cls === 'string') {
 			ele.data.class = `${cls} ${withAtClass(cls)}`;
