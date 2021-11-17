@@ -53,6 +53,7 @@ import AtImage from './components/AtImage';
 import AtCustomerImage from './components/AtImage/AtCustomerImage.vue';
 import AtGoodsImage from './components/AtImage/AtGoodsImage.vue';
 import AtVipImage from './components/AtImage/AtVipImage.vue';
+import AtCard from './components/AtCard/index.vue';
 
 export * from 'element-ui';
 export {
@@ -102,7 +103,8 @@ export {
 	AtImage,
 	AtCustomerImage,
 	AtGoodsImage,
-	AtVipImage
+	AtVipImage,
+	AtCard
 };
 
 const components = [
@@ -152,7 +154,8 @@ const components = [
 	AtImage,
 	AtCustomerImage,
 	AtGoodsImage,
-	AtVipImage
+	AtVipImage,
+	AtCard
 ];
 
 export default {

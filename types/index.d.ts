@@ -39,6 +39,7 @@ import { AtSlider } from './AtSlider';
 import { AtInputNumber } from './AtInputNumber';
 import { AtUpload } from './AtUpload';
 import { AtImage } from './AtImage';
+import { AtCard } from './AtCard';
 
 export {
 	AtButton,
@@ -78,6 +79,7 @@ export {
 	AtSlider,
 	AtInputNumber,
 	AtUpload,
-	AtImage
+	AtImage,
+	AtCard
 };
 export default AntaElementUI;
