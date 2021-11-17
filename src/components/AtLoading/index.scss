@@ -23,6 +23,7 @@
 
 .at-loading-mask.is-static {
 	position: static;
+	overflow: hidden;
 	.at-loading-spinner {
 		position: static;
 		margin-top: 0;

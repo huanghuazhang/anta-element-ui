@@ -42,6 +42,7 @@ import { AtImage } from './AtImage';
 import { AtCard } from './AtCard';
 import { AtTitle } from './AtTitle';
 import { AtLineClamp } from './AtLineClamp';
+import { AtInfiniteScrollBottom } from './AtInfiniteScrollBottom';
 
 export {
 	AtButton,
@@ -84,6 +85,7 @@ export {
 	AtImage,
 	AtCard,
 	AtTitle,
-	AtLineClamp
+	AtLineClamp,
+	AtInfiniteScrollBottom
 };
 export default AntaElementUI;

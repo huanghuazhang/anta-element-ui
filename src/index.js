@@ -56,6 +56,7 @@ import AtVipImage from './components/AtImage/AtVipImage.vue';
 import AtCard from './components/AtCard';
 import AtTitle from './components/AtTitle';
 import AtLineClamp from './components/AtLineClamp';
+import AtInfiniteScrollBottom from './components/AtInfiniteScrollBottom';
 
 export * from 'element-ui';
 export {
@@ -108,7 +109,8 @@ export {
 	AtVipImage,
 	AtCard,
 	AtTitle,
-	AtLineClamp
+	AtLineClamp,
+	AtInfiniteScrollBottom
 };
 
 const components = [
@@ -161,7 +163,8 @@ const components = [
 	AtVipImage,
 	AtCard,
 	AtTitle,
-	AtLineClamp
+	AtLineClamp,
+	AtInfiniteScrollBottom
 ];
 
 export default {
