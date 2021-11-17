@@ -41,6 +41,7 @@ import { AtUpload } from './AtUpload';
 import { AtImage } from './AtImage';
 import { AtCard } from './AtCard';
 import { AtBlockHeader } from './AtBlockHeader';
+import { AtLineClamp } from './AtLineClamp';
 
 export {
 	AtButton,
@@ -81,6 +82,8 @@ export {
 	AtInputNumber,
 	AtUpload,
 	AtImage,
-	AtCard
+	AtCard,
+	AtBlockHeader,
+	AtLineClamp
 };
 export default AntaElementUI;

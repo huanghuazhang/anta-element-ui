@@ -55,6 +55,7 @@ import AtGoodsImage from './components/AtImage/AtGoodsImage.vue';
 import AtVipImage from './components/AtImage/AtVipImage.vue';
 import AtCard from './components/AtCard';
 import AtBlockHeader from './components/AtBlockHeader';
+import AtLineClamp from './components/AtLineClamp';
 
 export * from 'element-ui';
 export {
@@ -106,7 +107,8 @@ export {
 	AtGoodsImage,
 	AtVipImage,
 	AtCard,
-	AtBlockHeader
+	AtBlockHeader,
+	AtLineClamp
 };
 
 const components = [
@@ -158,7 +160,8 @@ const components = [
 	AtGoodsImage,
 	AtVipImage,
 	AtCard,
-	AtBlockHeader
+	AtBlockHeader,
+	AtLineClamp
 ];
 
 export default {
