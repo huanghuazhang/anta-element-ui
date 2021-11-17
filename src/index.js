@@ -57,6 +57,7 @@ import AtCard from './components/AtCard';
 import AtTitle from './components/AtTitle';
 import AtLineClamp from './components/AtLineClamp';
 import AtInfiniteScrollBottom from './components/AtInfiniteScrollBottom';
+import AtEmpty from './components/AtEmpty';
 
 export * from 'element-ui';
 export {
@@ -110,7 +111,8 @@ export {
 	AtCard,
 	AtTitle,
 	AtLineClamp,
-	AtInfiniteScrollBottom
+	AtInfiniteScrollBottom,
+	AtEmpty
 };
 
 const components = [
@@ -164,7 +166,8 @@ const components = [
 	AtCard,
 	AtTitle,
 	AtLineClamp,
-	AtInfiniteScrollBottom
+	AtInfiniteScrollBottom,
+	AtEmpty
 ];
 
 export default {
