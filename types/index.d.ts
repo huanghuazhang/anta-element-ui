@@ -40,7 +40,7 @@ import { AtInputNumber } from './AtInputNumber';
 import { AtUpload } from './AtUpload';
 import { AtImage } from './AtImage';
 import { AtCard } from './AtCard';
-import { AtBlockHeader } from './AtBlockHeader';
+import { AtTitle } from './AtTitle';
 import { AtLineClamp } from './AtLineClamp';
 
 export {
@@ -83,7 +83,7 @@ export {
 	AtUpload,
 	AtImage,
 	AtCard,
-	AtBlockHeader,
+	AtTitle,
 	AtLineClamp
 };
 export default AntaElementUI;

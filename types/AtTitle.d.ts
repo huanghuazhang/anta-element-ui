@@ -1,4 +1,4 @@
-export declare class AtBlockHeader {
+export declare class AtTitle {
 	right: string;
 	type: 'normal' | 'module';
 }

@@ -1,4 +1,4 @@
-.at-block-header {
+.at-title {
 	padding: 10px;
 	border-bottom: 1px solid $--border-color-lighter;
 	display: flex;
@@ -6,11 +6,10 @@
 	&__title {
 		flex: 1;
 		font-weight: bold;
+		font-size: 16px;
 	}
-	&--module {
-		background-color: $--background-color-base;
-		border-bottom-width: 0;
-		.at-block-header__title {
+	&--prefix {
+		.at-title__title {
 			padding: 0 0 0 11px;
 			position: relative;
 			&:before {
@@ -22,9 +21,16 @@
 				content: '';
 				display: block;
 				width: 3px;
-				height: 70%;
+				height: 60%;
 				background-color: $--color-primary;
 			}
+		}
+	}
+	&--module {
+		background-color: $--background-color-base;
+		border-bottom-width: 0;
+		.at-title__title {
+			font-size: 14px;
 		}
 	}
 }
