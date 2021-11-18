@@ -94,3 +94,16 @@
 		content: '\e66a';
 	}
 }
+
+@mixin at-icon-up {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e6a0';
+	}
+}
+@mixin at-icon-down {
+	font-family: antaicons !important;
+	&:before {
+		content: "\e65f";
+	}
+}

@@ -60,6 +60,8 @@ import AtInfiniteScrollBottom from './components/AtInfiniteScrollBottom';
 import AtEmpty from './components/AtEmpty';
 import AtCarousel from './components/AtCarousel';
 import AtCarouselItem from './components/AtCarouselItem';
+import AtCollapse from './components/AtCollapse';
+import AtCollapseItem from './components/AtCollapseItem';
 
 export * from 'element-ui';
 export {
@@ -173,7 +175,9 @@ const components = [
 	AtInfiniteScrollBottom,
 	AtEmpty,
 	AtCarousel,
-	AtCarouselItem
+	AtCarouselItem,
+	AtCollapse,
+	AtCollapseItem
 ];
 
 export default {
