@@ -52,6 +52,8 @@ import { AtTooltip } from './AtTooltip';
 import { AtTabs } from './AtTabs';
 import { AtTabPanel } from './AtTabPanel';
 import { AtTag } from './AtTag';
+import { AtTimeline } from './AtTimeline';
+import { AtTimelineItem } from './AtTimelineItem';
 
 export {
 	AtButton,
@@ -104,6 +106,8 @@ export {
 	AtTooltip,
 	AtTabs,
 	AtTabPanel,
-	AtTag
+	AtTag,
+	AtTimeline,
+	AtTimelineItem
 };
 export default AntaElementUI;

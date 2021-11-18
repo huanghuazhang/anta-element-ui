@@ -66,6 +66,8 @@ import AtTooltip from './components/AtTooltip';
 import AtTabs from './components/AtTabs';
 import AtTabPanel from './components/AtTabPanel';
 import AtTag from './components/AtTag';
+import AtTimeline from './components/AtTimeline';
+import AtTimelineItem from './components/AtTimelineItem';
 
 export * from 'element-ui';
 export {
@@ -126,7 +128,9 @@ export {
 	AtTooltip,
 	AtTabs,
 	AtTabPanel,
-	AtTag
+	AtTag,
+	AtTimeline,
+	AtTimelineItem
 };
 
 const components = [
@@ -189,7 +193,9 @@ const components = [
 	AtTooltip,
 	AtTabs,
 	AtTabPanel,
-	AtTag
+	AtTag,
+	AtTimeline,
+	AtTimelineItem
 ];
 
 export default {

@@ -1,3 +1,8 @@
 import { ElTag } from 'element-ui/types/tag';
 /** Button Component */
-export declare class AtTag extends ElTag {}
+
+export type AtTagType = 'success' | 'warning' | 'danger' | 'info';
+export declare class AtTag extends ElTag {
+	// @ts-ignore
+	type: AtTagType;
+}
