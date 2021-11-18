@@ -1,4 +1,13 @@
 .at-tabs {
+	.el-tabs__active-bar {
+		&:before {
+			content: '';
+			display: block;
+			height: 100%;
+			margin: 0 -10px;
+			background-color: $--color-primary;
+		}
+	}
 	.el-tabs__header {
 		border-bottom: 1px solid $--border-color-base;
 		.el-tabs__new-tab {
