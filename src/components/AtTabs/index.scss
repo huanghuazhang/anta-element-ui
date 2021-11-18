@@ -1,0 +1,191 @@
+.at-tabs {
+	.el-tabs__header {
+		border-bottom: 1px solid $--border-color-base;
+		.el-tabs__new-tab {
+			margin: 9px 9px 0 9px;
+			border-color: $--color-primary;
+			color: $--color-primary;
+			border-radius: $--border-radius-small;
+		}
+	}
+	.el-tabs__nav-next,
+	.el-tabs__nav-prev {
+		width: 16px;
+		text-align: center;
+		line-height: 40px;
+	}
+	.el-tabs__nav-wrap:after {
+		height: 0px;
+		background-color: $--border-color-base;
+	}
+	&.el-tabs--top .el-tabs__item.is-top:nth-child(2) {
+		padding-left: 20px;
+	}
+	&.el-tabs--top .el-tabs__item.is-top:last-child {
+		padding-right: 20px;
+	}
+	&.el-tabs--left,
+	&.el-tabs--right {
+		.el-tabs__header {
+			border-bottom-width: 0;
+			.el-tabs__new-tab {
+				float: none;
+				margin: 0 0 10px 0;
+				display: block;
+				width: auto;
+			}
+		}
+	}
+	.el-tabs__item {
+		transition: all 300ms ease;
+		&.is-active {
+			color: $--color-text-primary;
+		}
+		.el-icon-close {
+			transition: none;
+		}
+	}
+	&.el-tabs--border-card {
+		box-shadow: $--box-shadow-base;
+
+		&.el-tabs--left,
+		&.el-tabs--right {
+			.el-tabs__header {
+				.el-tabs__new-tab {
+					margin: 10px;
+				}
+			}
+		}
+	}
+	&.el-tabs--card {
+		.el-tabs__header {
+			border-bottom: 1px solid $--border-color-base;
+			.el-tabs__nav {
+				border-color: $--border-color-base;
+			}
+			.el-tabs__item {
+				border-bottom-color: $--border-color-base;
+				border-left-color: $--border-color-base;
+				background-color: $--background-color-base;
+
+				.el-icon-close {
+					transition: all 300ms ease;
+				}
+
+				&.is-active {
+					background-color: transparent;
+					border-bottom-color: $--color-white;
+				}
+			}
+		}
+		&.el-tabs--left,
+		&.el-tabs--right {
+			.el-tabs__header {
+				border-bottom-width: 0;
+			}
+		}
+		&.el-tabs--bottom {
+			.el-tabs__header {
+				border-top: 1px solid $--border-color-base;
+				border-bottom-width: 0;
+				.el-tabs__nav {
+					border-radius: 0 0 $--border-radius-base $--border-radius-base;
+					border-top-width: 0;
+				}
+				.el-tabs__nav-wrap {
+					margin-bottom: 0;
+					margin-top: -1px;
+				}
+				.el-tabs__item {
+					border-top: 1px solid $--border-color-base;
+					&.is-active {
+						background-color: transparent;
+						border-top-color: $--color-white;
+						border-bottom-color: $--border-color-base;
+					}
+				}
+			}
+		}
+	}
+	&.at-tabs--button {
+		.el-tabs__nav-next,
+		.el-tabs__nav-prev {
+			line-height: 32px;
+		}
+		.el-tabs__header {
+			border-bottom-width: 0;
+			.el-tabs__new-tab {
+				margin: 6px 6px 0 6px;
+			}
+		}
+		&.el-tabs--left,
+		&.el-tabs--right {
+			.el-tabs__header {
+				.el-tabs__new-tab {
+					margin: 0 0 10px 0;
+				}
+			}
+			.el-tabs__item {
+				border-right-width: 1px;
+				border-top-width: 0;
+
+				&:first-child {
+					border-top-width: 1px;
+					border-radius: $--border-radius-small $--border-radius-small 0 0;
+				}
+				&:last-child {
+					border-radius: 0 0 $--border-radius-small $--border-radius-small;
+				}
+				&.is-disabled {
+					border-left-color: $--border-color-lighter;
+					& + .el-tabs__item {
+						&:not(.is-disabled) {
+							border-top-width: 1px;
+						}
+					}
+				}
+				&:not(.is-disabled) + .is-disabled {
+					border-left-color: $--border-color-lighter;
+				}
+			}
+		}
+		&.el-tabs--bottom {
+			.el-tabs__item.is-bottom:nth-child(2) {
+				padding-left: 20px;
+			}
+			.el-tabs__item.is-bottom:last-child {
+				padding-right: 20px;
+			}
+		}
+		.el-tabs__item {
+			line-height: 30px;
+			height: 32px;
+			border: 1px solid $--color-primary;
+			border-right-width: 0;
+			text-align: center;
+			color: $--color-primary;
+			&:first-child {
+				border-radius: $--border-radius-small 0 0 $--border-radius-small;
+				&.is-disabled {
+					border-left-color: $--border-color-lighter;
+				}
+			}
+			&:last-child {
+				border-right-width: 1px;
+				border-radius: 0 $--border-radius-small $--border-radius-small 0;
+			}
+			&.is-active {
+				background-color: $--color-primary;
+				color: $--color-white;
+			}
+			&.is-disabled {
+				background-color: $--background-color-base;
+				color: $--color-text-placeholder;
+				border-color: $--border-color-lighter;
+			}
+			&:not(.is-disabled) + .is-disabled {
+				border-left-color: $--color-primary;
+			}
+		}
+	}
+}

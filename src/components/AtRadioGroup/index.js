@@ -4,6 +4,13 @@ import withStaticClass from '../../utils/withStaticClass';
 const AtRadioGroup = {
 	...ElRadioGroup,
 	name: 'AtRadioGroup',
+	props: {
+		...ElRadioGroup.props,
+		size: {
+			type: String,
+			default: 'small'
+		}
+	},
 	render(...args) {
 		const element = withStaticClass(this, ElRadioGroup, ...args);
 

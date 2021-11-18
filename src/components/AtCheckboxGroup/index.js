@@ -4,6 +4,13 @@ import withStaticClass from '../../utils/withStaticClass';
 const AtCheckboxGroup = {
 	...ElCheckboxGroup,
 	name: 'AtCheckboxGroup',
+	props: {
+		...ElCheckboxGroup.props,
+		size: {
+			type: String,
+			default: 'small'
+		}
+	},
 	render(...args) {
 		const element = withStaticClass(this, ElCheckboxGroup, ...args);
 
