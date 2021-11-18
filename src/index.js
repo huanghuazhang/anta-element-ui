@@ -62,6 +62,7 @@ import AtCarousel from './components/AtCarousel';
 import AtCarouselItem from './components/AtCarouselItem';
 import AtCollapse from './components/AtCollapse';
 import AtCollapseItem from './components/AtCollapseItem';
+import AtTooltip from './components/AtTooltip';
 
 export * from 'element-ui';
 export {
@@ -118,7 +119,8 @@ export {
 	AtInfiniteScrollBottom,
 	AtEmpty,
 	AtCarousel,
-	AtCarouselItem
+	AtCarouselItem,
+	AtTooltip
 };
 
 const components = [
@@ -177,7 +179,8 @@ const components = [
 	AtCarousel,
 	AtCarouselItem,
 	AtCollapse,
-	AtCollapseItem
+	AtCollapseItem,
+	AtTooltip
 ];
 
 export default {

@@ -48,6 +48,7 @@ import { AtCarousel } from './AtCarousel';
 import { AtCarouselItem } from './AtCarouselItem';
 import { AtCollapse } from './AtCollapse';
 import { AtCollapseItem } from './AtCollapseItem';
+import { AtTooltip } from './AtTooltip';
 
 export {
 	AtButton,
@@ -96,6 +97,7 @@ export {
 	AtCarousel,
 	AtCarouselItem,
 	AtCollapse,
-	AtCollapseItem
+	AtCollapseItem,
+	AtTooltip
 };
 export default AntaElementUI;
