@@ -65,6 +65,7 @@ import AtCollapseItem from './components/AtCollapseItem';
 import AtTooltip from './components/AtTooltip';
 import AtTabs from './components/AtTabs';
 import AtTabPanel from './components/AtTabPanel';
+import AtTag from './components/AtTag';
 
 export * from 'element-ui';
 export {
@@ -124,7 +125,8 @@ export {
 	AtCarouselItem,
 	AtTooltip,
 	AtTabs,
-	AtTabPanel
+	AtTabPanel,
+	AtTag
 };
 
 const components = [
@@ -186,7 +188,8 @@ const components = [
 	AtCollapseItem,
 	AtTooltip,
 	AtTabs,
-	AtTabPanel
+	AtTabPanel,
+	AtTag
 ];
 
 export default {

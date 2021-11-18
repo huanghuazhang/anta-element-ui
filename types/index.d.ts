@@ -51,6 +51,7 @@ import { AtCollapseItem } from './AtCollapseItem';
 import { AtTooltip } from './AtTooltip';
 import { AtTabs } from './AtTabs';
 import { AtTabPanel } from './AtTabPanel';
+import { AtTag } from './AtTag';
 
 export {
 	AtButton,
@@ -102,6 +103,7 @@ export {
 	AtCollapseItem,
 	AtTooltip,
 	AtTabs,
-	AtTabPanel
+	AtTabPanel,
+	AtTag
 };
 export default AntaElementUI;

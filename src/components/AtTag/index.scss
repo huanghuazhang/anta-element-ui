@@ -1,0 +1,28 @@
+.at-tag {
+	border-radius: $--border-radius-small;
+	font-size: 14px;
+	&.el-tag--large {
+		height: 28px;
+		line-height: 26px;
+		padding: 0 6px;
+	}
+	&.el-tag--medium {
+		height: 24px;
+		line-height: 22px;
+		padding: 0 4px;
+	}
+	&.el-tag--small {
+		height: 20px;
+		line-height: 18px;
+		padding: 0 4px;
+	}
+	&.el-tag--mini {
+		font-size: 12px;
+		height: 18px;
+		line-height: 16px;
+		padding: 0 4px;
+	}
+	.el-tag__close {
+		right: -3px;
+	}
+}
