@@ -12,8 +12,11 @@ export default function withStaticClass(scope, component, ...args) {
 	const element = component.render.bind(scope)(...args);
 	let ele = element;
 
-	if (!element.data) {
+	if (!element.data && element.children) {
 		ele = element.children[0];
+	}
+	if (!element.data && element.context.$vnode) {
+		ele = element.context.$vnode;
 	}
 
 	let { staticClass, class: cls } = ele.data;

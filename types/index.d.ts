@@ -55,6 +55,8 @@ import { AtTag } from './AtTag';
 import { AtTimeline } from './AtTimeline';
 import { AtTimelineItem } from './AtTimelineItem';
 import { AtTree } from './AtTree';
+import { AtTable } from './AtTable';
+import { AtTableColumn } from './AtTableColumn';
 
 export {
 	AtButton,
@@ -110,6 +112,8 @@ export {
 	AtTag,
 	AtTimeline,
 	AtTimelineItem,
-	AtTree
+	AtTree,
+	AtTable,
+	AtTableColumn,
 };
 export default AntaElementUI;
