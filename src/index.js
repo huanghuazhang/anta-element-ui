@@ -72,6 +72,7 @@ import AtTree from './components/AtTree';
 import AtTable from './components/AtTable';
 import AtTableColumn from './components/AtTableColumn';
 import AtPagination from './components/AtPagination';
+import AtBadge from './components/AtBadge';
 
 export * from 'element-ui';
 export {
@@ -138,7 +139,8 @@ export {
 	AtTree,
 	AtTable,
 	AtTableColumn,
-	AtPagination
+	AtPagination,
+	AtBadge
 };
 
 const components = [
@@ -207,7 +209,8 @@ const components = [
 	AtTree,
 	AtTable,
 	AtTableColumn,
-	AtPagination
+	AtPagination,
+	AtBadge
 ];
 
 export default {

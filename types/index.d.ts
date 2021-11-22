@@ -58,6 +58,7 @@ import { AtTree } from './AtTree';
 import { AtTable } from './AtTable';
 import { AtTableColumn } from './AtTableColumn';
 import { AtPagination } from './AtPagination';
+import { AtBadge } from './AtBadge';
 
 export {
 	AtButton,
@@ -116,6 +117,7 @@ export {
 	AtTree,
 	AtTable,
 	AtTableColumn,
-	AtPagination
+	AtPagination,
+	AtBadge
 };
 export default AntaElementUI;
