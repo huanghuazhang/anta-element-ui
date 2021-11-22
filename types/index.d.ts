@@ -57,6 +57,7 @@ import { AtTimelineItem } from './AtTimelineItem';
 import { AtTree } from './AtTree';
 import { AtTable } from './AtTable';
 import { AtTableColumn } from './AtTableColumn';
+import { AtPagination } from './AtPagination';
 
 export {
 	AtButton,
@@ -115,5 +116,6 @@ export {
 	AtTree,
 	AtTable,
 	AtTableColumn,
+	AtPagination
 };
 export default AntaElementUI;

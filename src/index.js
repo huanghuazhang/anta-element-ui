@@ -71,6 +71,7 @@ import AtTimelineItem from './components/AtTimelineItem';
 import AtTree from './components/AtTree';
 import AtTable from './components/AtTable';
 import AtTableColumn from './components/AtTableColumn';
+import AtPagination from './components/AtPagination';
 
 export * from 'element-ui';
 export {
@@ -136,7 +137,8 @@ export {
 	AtTimelineItem,
 	AtTree,
 	AtTable,
-	AtTableColumn
+	AtTableColumn,
+	AtPagination
 };
 
 const components = [
@@ -204,7 +206,8 @@ const components = [
 	AtTimelineItem,
 	AtTree,
 	AtTable,
-	AtTableColumn
+	AtTableColumn,
+	AtPagination
 ];
 
 export default {

@@ -60,6 +60,13 @@
 	}
 }
 
+@mixin at-icon-left {
+	font-family: antaicons !important;
+	&:before {
+		content: '\e674';
+	}
+}
+
 @mixin at-icon-eye-close {
 	font-family: antaicons !important;
 	&:before {
@@ -104,6 +111,6 @@
 @mixin at-icon-down {
 	font-family: antaicons !important;
 	&:before {
-		content: "\e65f";
+		content: '\e65f';
 	}
 }

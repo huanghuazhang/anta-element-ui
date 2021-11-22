@@ -30,7 +30,7 @@
 	// 	background-color: $--color-b1;
 	// }
 	.el-table__body tr.el-table__row.el-table__row--selected > td.el-table__cell,
-	.el-table__body tr.current-row > td.el-table__cell {
+	.el-table__body tr.el-table__row.current-row > td.el-table__cell {
 		background-color: $--color-b1;
 	}
 	&.el-table .cell,
