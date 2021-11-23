@@ -1,19 +1,21 @@
 .at-upload {
-	width: 320px;
 
 	&.is-block {
 		display: block;
 		width: 100%;
 	}
-	&.text {
+	&.list {
+		width: 320px;
 		border: 1px solid $--border-color-base;
 		border-radius: $--border-radius-small;
 		padding: 0 0 10px 0;
 	}
 	&.picture {
+		width: 320px;
 		padding: 0 0 10px 0;
 	}
 	&.picture-card {
+		width: 320px;
 		width: auto;
 		.el-upload__tip {
 			text-align: left;
@@ -29,7 +31,7 @@
 		display: block;
 		padding: 8px 0 0 0;
 	}
-	.el-upload--text {
+	.el-upload--list {
 		display: block;
 		text-align: center;
 		padding: 8px 0 0 0;
@@ -114,7 +116,7 @@
 				}
 			}
 		}
-		&--text {
+		&--list {
 			border-bottom: 1px solid $--border-color-base;
 			overflow: hidden;
 			padding: 9px 9px 9px 9px;

@@ -136,11 +136,12 @@ const AtUpload = {
 						<div
 							class={['at-upload', this.block ? 'is-block' : '', this.listType]}
 						>
-							{uploadList}
+							{this.listType !== 'text' ? uploadList : ''}
 							{this.$slots.trigger
 								? [uploadComponent, this.$slots.default]
 								: uploadComponent}
 							{this.$slots.tip || tip}
+							{this.listType !== 'text' ? '' : uploadList}
 						</div>
 					);
 				}
