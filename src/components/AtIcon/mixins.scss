@@ -1,4 +1,4 @@
-@mixin scale-size {
+@mixin scale-icon-size {
 	&:before {
 		display: block;
 		transform: scale((12/14));

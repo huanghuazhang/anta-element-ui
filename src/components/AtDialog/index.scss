@@ -1,10 +1,9 @@
-
 .at-dialog {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	.el-dialog {
-		box-shadow: $--box-shadow-base;
+		// box-shadow: $--box-shadow-base;
 		border-radius: $--border-radius-base;
 	}
 	.el-dialog__headerbtn {
@@ -16,7 +15,7 @@
 		&.el-icon-close {
 			color: $--color-text-primary;
 			top: 18px;
-			@include  at-icon-close();
+			@include at-icon-close();
 		}
 	}
 	.el-dialog__title {
@@ -24,6 +23,10 @@
 		font-weight: 500;
 		color: $--color-text-primary;
 		line-height: 20px;
+
+		&:after {
+			content: '　';
+		}
 	}
 	.el-dialog__header {
 		border-bottom: 1px solid $--border-color-base;

@@ -105,7 +105,7 @@
 		}
 		.el-picker-panel__content {
 			width: 280px;
-		}	
+		}
 	}
 	.popper__arrow {
 		display: none;
@@ -254,6 +254,11 @@
 	.el-date-range-picker__time-header {
 		padding: 6px 2px;
 		.el-date-range-picker__editor.el-input.at-input {
+			width: 100%;
+		}
+	}
+	.el-date-picker__time-header {
+		.el-date-picker__editor-wrap .el-input.at-input {
 			width: 100%;
 		}
 	}

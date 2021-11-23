@@ -36,7 +36,7 @@
 				display: none;
 			}
 			.el-checkbox__inner {
-				@include scale-size();
+				@include scale-icon-size();
 				@include at-icon-check();
 				&:before {
 					font-weight: bold;

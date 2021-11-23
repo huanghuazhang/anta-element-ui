@@ -1,4 +1,4 @@
-
+@import '../AtInput/mixins.scss';
 
 .at-message-box {
 	box-shadow: $--box-shadow-base;
@@ -22,7 +22,7 @@
 			@include at-icon-info-circle();
 		}
 		&.el-icon-success {
-			@include at-icon-check-circle ();
+			@include at-icon-check-circle();
 		}
 		&.el-icon-error {
 			@include at-icon-close-circle();
@@ -55,6 +55,10 @@
 		color: $--color-text-primary;
 		& + .el-message-box__btns {
 			padding-top: 0;
+		}
+		.el-input {
+			@include at-input();
+			width: 100%;
 		}
 	}
 }

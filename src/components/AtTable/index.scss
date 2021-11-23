@@ -52,7 +52,7 @@
 	.el-table__expand-icon {
 		.el-icon-arrow-right {
 			@include at-icon-right();
-			@include scale-size();
+			@include scale-icon-size();
 			color: $--color-text-regular;
 		}
 	}

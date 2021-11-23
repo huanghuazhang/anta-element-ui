@@ -13,6 +13,10 @@ const AtAlert = {
 	name: 'AtAlert',
 	props: {
 		...ElAlert.props,
+		type: {
+			type: String,
+			default: 'primary'
+		},
 		small: {
 			type: Boolean,
 			default: false

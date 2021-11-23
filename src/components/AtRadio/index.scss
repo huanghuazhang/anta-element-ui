@@ -27,6 +27,14 @@
 			& + .el-radio__label {
 				color: $--color-text-primary;
 			}
+			&.is-disabled {
+				.el-radio__inner:after {
+					background-color: $--border-color-light;
+				}
+				& + .el-radio__label {
+					color: $--color-text-placeholder;
+				}
+			}
 		}
 	}
 	&.is-checked {

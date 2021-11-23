@@ -11,6 +11,9 @@
 		}
 		&.el-button--mini {
 			padding: 4px;
+			.el-icon-arrow-down {
+				@include scale-icon-size();
+			}
 		}
 		.el-icon-arrow-down {
 			@include at-icon-down();

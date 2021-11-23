@@ -1,5 +1,6 @@
 .at-tabs {
-	.el-tabs__active-bar {
+	&.el-tabs--bottom .el-tabs__active-bar ,
+	&.el-tabs--top .el-tabs__active-bar {
 		&:before {
 			content: '';
 			display: block;

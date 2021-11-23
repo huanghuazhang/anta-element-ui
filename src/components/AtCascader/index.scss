@@ -29,7 +29,7 @@
 			&.el-icon-arrow-down {
 				font-size: 12px;
 				color: $--color-text-regular;
-				@include scale-size();
+				@include scale-icon-size();
 				@include at-icon-caret-down();
 				&:before {
 					position: relative;
@@ -142,7 +142,7 @@
 				}
 				&__postfix.el-icon-arrow-right {
 					font-size: 12px;
-					@include scale-size();
+					@include scale-icon-size();
 					@include at-icon-right();
 				}
 			}
