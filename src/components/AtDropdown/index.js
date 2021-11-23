@@ -1,5 +1,6 @@
 import ElDropdown from 'element-ui/packages/dropdown/src/dropdown';
 import withStaticClass from '../../utils/withStaticClass';
+import ElButton from '../AtButton';
 
 const AtDropdown = {
 	...ElDropdown,
@@ -10,6 +11,10 @@ const AtDropdown = {
 			type: String,
 			default: 'bottom-start'
 		}
+	},
+	components: {
+		...ElDropdown.components,
+		ElButton
 	},
 	render(...args) {
 		const element = withStaticClass(this, ElDropdown, ...args);

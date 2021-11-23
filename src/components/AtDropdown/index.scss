@@ -1,7 +1,20 @@
 .at-dropdown {
 	color: $--color-primary;
-	.at-button.el-button--small {
-		padding-right: 11px;
+	.el-dropdown__caret-button {
+		padding: 11px;
+
+		&.el-button--medium {
+			padding: 10px;
+		}
+		&.el-button--small {
+			padding: 8px;
+		}
+		&.el-button--mini {
+			padding: 4px;
+		}
+		.el-icon-arrow-down {
+			@include at-icon-down();
+		}
 	}
 }
 .at-dropdown-menu {
