@@ -7,6 +7,12 @@
 - [element](https://github.com/ElemeFE/element)
 - [demo](http://anta-element-ui.fetribe.cn/login)
 
+## 安装
+
+```js
+npm i anta-element-ui
+```
+
 ## 使用
 
 ```js
