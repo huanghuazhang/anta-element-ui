@@ -4,8 +4,8 @@
 基于 element ui 定制主题
 ```
 
-[element](https://github.com/ElemeFE/element)
-[demo](http://anta-element-ui.fetribe.cn/login)
+- [element](https://github.com/ElemeFE/element)
+- [demo](http://anta-element-ui.fetribe.cn/login)
 
 ## 使用
 
