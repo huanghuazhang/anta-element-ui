@@ -20,7 +20,7 @@ import AtSkeleton from './components/AtSkeleton';
 import AtSkeletonItem from './components/AtSkeletonItem';
 import AtDialog from './components/AtDialog';
 import AtProgress from './components/AtProgress';
-import AtLoading from './components/AtLoading';
+import AtLoading from './components/AtLoading/index';
 
 import AtInput from './components/AtInput';
 import AtAutocomplete from './components/AtAutocomplete';
@@ -235,7 +235,11 @@ export default {
 		locale.i18n(opts.i18n);
 
 		components.forEach(component => {
-			Vue.component(component.name, component);
+			if (component.install) {
+				component.install(Vue);
+			} else {
+				Vue.component(component.name, component);
+			}
 		});
 	}
 };

@@ -1,4 +1,5 @@
 import ElPopover from 'element-ui/packages/popover/src/main';
+import directive from 'element-ui/packages/popover/src/directive';
 import withStaticClass from '../../utils/withStaticClass';
 
 const AtPopover = {
@@ -27,6 +28,7 @@ const AtPopover = {
 
 /* istanbul ignore next */
 AtPopover.install = function(Vue) {
+	Vue.directive('popover', directive);
 	Vue.component(AtPopover.name, AtPopover);
 };
 
