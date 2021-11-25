@@ -30,7 +30,7 @@ const AtTableBody = {
 						display: 'none'
 				  };
 
-			// 判断 select 改动
+			// author by youpinyao 判断 select 改动
 			if (this.store.isSelected(row)) {
 				rowClasses.push('el-table__row--selected');
 			}
