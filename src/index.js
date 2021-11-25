@@ -73,6 +73,10 @@ import AtTable from './components/AtTable';
 import AtTableColumn from './components/AtTableColumn';
 import AtPagination from './components/AtPagination';
 import AtBadge from './components/AtBadge';
+import AtSortable from './components/AtSortable';
+import AtSortableItem from './components/AtSortableItem';
+
+import utils from './utils';
 
 export * from 'element-ui';
 export {
@@ -140,7 +144,10 @@ export {
 	AtTable,
 	AtTableColumn,
 	AtPagination,
-	AtBadge
+	AtBadge,
+	AtSortable,
+	AtSortableItem,
+	utils
 };
 
 const components = [
@@ -210,7 +217,9 @@ const components = [
 	AtTable,
 	AtTableColumn,
 	AtPagination,
-	AtBadge
+	AtBadge,
+	AtSortable,
+	AtSortableItem
 ];
 
 export default {

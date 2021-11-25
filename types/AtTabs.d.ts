@@ -4,5 +4,5 @@ export type AtTabType = TabType | 'button';
 
 export declare class AtTabs extends ElTabs {
 	// @ts-ignore
-	type: AtTabType;
+	type?: AtTabType;
 }

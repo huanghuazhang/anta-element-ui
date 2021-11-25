@@ -59,6 +59,9 @@ import { AtTable } from './AtTable';
 import { AtTableColumn } from './AtTableColumn';
 import { AtPagination } from './AtPagination';
 import { AtBadge } from './AtBadge';
+import { AtSortable } from './AtSortable';
+import { AtSortableItem } from './AtSortableItem';
+import { utils } from './utils';
 
 export {
 	AtButton,
@@ -118,6 +121,9 @@ export {
 	AtTable,
 	AtTableColumn,
 	AtPagination,
-	AtBadge
+	AtBadge,
+	AtSortable,
+	AtSortableItem,
+	utils
 };
 export default AntaElementUI;
