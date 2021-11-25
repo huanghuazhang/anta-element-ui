@@ -1,4 +1,4 @@
-const { MessageBox } = require('element-ui');
+import MessageBox from 'element-ui/packages/message-box';
 
 MessageBox.setDefaults({
 	title: '',

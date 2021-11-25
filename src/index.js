@@ -77,7 +77,6 @@ import AtSortableItem from './components/AtSortableItem';
 
 import utils from './utils';
 
-export * from 'element-ui';
 export {
 	AtButton,
 	AtButtonGroup,
