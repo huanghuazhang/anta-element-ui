@@ -1,4 +1,4 @@
-import ElementUI from 'element-ui';
+import ElementUI from 'element-ui/src/index';
 import locale from 'element-ui/src/locale';
 import lang from 'element-ui/lib/locale/lang/zh-CN';
 
