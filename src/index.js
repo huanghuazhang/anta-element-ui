@@ -1,5 +1,4 @@
 import ElementUI from 'element-ui/src/index';
-import locale from 'element-ui/src/locale';
 import lang from 'element-ui/lib/locale/lang/zh-CN';
 
 import withCustomMonthDatePicker from './utils/withCustomMonthDatePicker';
@@ -231,8 +230,6 @@ export default {
 		}
 	) {
 		ElementUI.install(Vue, opts);
-		locale.use(opts.locale);
-		locale.i18n(opts.i18n);
 
 		components.forEach(component => {
 			if (component.install) {
