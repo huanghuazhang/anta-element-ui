@@ -1,9 +1,10 @@
 # ANTA ELEMENT UI
 
+[![npm](https://img.shields.io/npm/v/anta-element-ui)](https://www.npmjs.com/package/anta-element-ui) ![license](https://img.shields.io/npm/l/anta-element-ui)
+
 ```html
 基于 element-ui 定制主题
 ```
-[![npm](https://img.shields.io/npm/v/anta-element-ui)](https://www.npmjs.com/package/anta-element-ui) ![license](https://img.shields.io/npm/l/anta-element-ui)
 
 
 - [element-ui](https://github.com/ElemeFE/element)
