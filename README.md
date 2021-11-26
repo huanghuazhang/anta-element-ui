@@ -1,10 +1,13 @@
 # ANTA ELEMENT UI
 
 ```html
-基于 element ui 定制主题
+基于 element-ui 定制主题
 ```
+[![npm](https://img.shields.io/npm/v/anta-element-ui)](https://www.npmjs.com/package/anta-element-ui) ![license](https://img.shields.io/npm/l/anta-element-ui)
 
-- [element](https://github.com/ElemeFE/element)
+
+- [element-ui](https://github.com/ElemeFE/element)
+- [element-ui-backstarge](https://github.com/youpinyao/anta-element-ui-backstage)
 - [demo](http://anta-element-ui.fetribe.cn/login)
 
 ## 安装
