@@ -1,4 +1,8 @@
 .at-loading-spinner {
+	top: auto;
+	position: static;
+	margin-top: 0;
+	width: auto;
 	.path-bg {
 		stroke-dasharray: 90, 150;
 		stroke-dashoffset: 0;
@@ -10,6 +14,10 @@
 		stroke-width: 3;
 	}
 
+	.at-loading-text {
+		margin: 3px 0 0 0;
+	}
+
 	&.horizontal {
 		display: flex;
 		justify-content: center;
@@ -17,8 +25,14 @@
 
 		.at-loading-text {
 			margin-left: 12px;
+			margin-top: 0;
 		}
 	}
+}
+.at-loading-mask {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .at-loading-mask.is-static {
