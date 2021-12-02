@@ -1,4 +1,4 @@
-import { ElementUIComponent } from '../node_modules/element-ui/types/component';
+import { ElementUIComponent } from 'element-ui/types/component';
 
 /** AtClipboard Component */
 export declare class AtClipboard extends ElementUIComponent {

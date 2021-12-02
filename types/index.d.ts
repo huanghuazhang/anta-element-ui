@@ -1,5 +1,5 @@
-export * from '../node_modules/element-ui/types/element-ui';
-import * as AntaElementUI from '../node_modules/element-ui/types/element-ui';
+export * from 'element-ui/types/element-ui';
+import * as AntaElementUI from 'element-ui/types/element-ui';
 import { AtButton } from './AtButton';
 import { AtButtonGroup } from './AtButtonGroup';
 import { AtIcon } from './AtIcon';

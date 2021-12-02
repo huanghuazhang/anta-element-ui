@@ -1,4 +1,4 @@
-import { ElementUIComponent } from '../node_modules/element-ui/types/component';
+import { ElementUIComponent } from 'element-ui/types/component';
 
 /** Icon Component */
 export declare class AtIcon extends ElementUIComponent {
