@@ -76,6 +76,10 @@ import AtSortable from './components/AtSortable';
 import AtSortableItem from './components/AtSortableItem';
 
 import utils from './utils';
+import AtMenu from './components/AtMenu';
+import AtMenuItem from './components/AtMenuItem';
+import AtMenuItemGroup from './components/AtMenuItemGroup';
+import AtSubmenu from './components/AtSubmenu';
 
 export {
 	AtButton,
@@ -145,6 +149,10 @@ export {
 	AtBadge,
 	AtSortable,
 	AtSortableItem,
+	AtMenu,
+	AtMenuItem,
+	AtMenuItemGroup,
+	AtSubmenu,
 	utils
 };
 
@@ -217,7 +225,11 @@ const components = [
 	AtPagination,
 	AtBadge,
 	AtSortable,
-	AtSortableItem
+	AtSortableItem,
+	AtMenu,
+	AtMenuItem,
+	AtMenuItemGroup,
+	AtSubmenu
 ];
 
 export default {

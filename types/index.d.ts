@@ -61,6 +61,10 @@ import { AtPagination } from './AtPagination';
 import { AtBadge } from './AtBadge';
 import { AtSortable } from './AtSortable';
 import { AtSortableItem } from './AtSortableItem';
+import { AtMenu } from './AtMenu';
+import { AtMenuItem } from './AtMenuItem';
+import { AtMenuItemGroup } from './AtMenuItemGroup';
+import { AtSubmenu } from './AtSubmenu';
 import { utils } from './utils';
 
 export {
@@ -124,6 +128,10 @@ export {
 	AtBadge,
 	AtSortable,
 	AtSortableItem,
+	AtMenu,
+	AtMenuItem,
+	AtMenuItemGroup,
+	AtSubmenu,
 	utils
 };
 export default AntaElementUI;
