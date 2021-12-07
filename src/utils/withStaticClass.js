@@ -12,6 +12,10 @@ export default function withStaticClass(scope, component, ...args) {
 	const element = component.render.bind(scope)(...args);
 	let ele = element;
 
+	if (!element) {
+		return element;
+	}
+
 	if (!element.data && element.children) {
 		ele = element.children[0];
 	}
