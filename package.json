@@ -1,6 +1,6 @@
 {
   "name": "anta-element-ui",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "anta fila element-ui vue",
   "main": "src/index.js",
   "scripts": {
