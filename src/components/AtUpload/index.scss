@@ -5,6 +5,11 @@
 		display: block;
 		width: 100%;
 	}
+	&.picture-card.is-max {
+		.el-upload {
+			display: none;
+		}
+	}
 	&.list {
 		width: 320px;
 		border: 1px solid $--border-color-base;
