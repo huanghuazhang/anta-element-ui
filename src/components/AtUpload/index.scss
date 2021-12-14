@@ -1,4 +1,5 @@
 .at-upload {
+	line-height: normal;
 
 	&.is-block {
 		display: block;
@@ -26,6 +27,7 @@
 		border-radius: $--border-radius-small;
 		width: 80px;
 		height: 80px;
+		margin: 0 0 8px 0;
 	}
 	.el-upload--picture {
 		display: block;
@@ -76,6 +78,7 @@
 	}
 	.el-upload-list {
 		&--picture-card {
+			font-size: 0;
 			.el-upload-list__item-status-label {
 				background-color: $--color-success;
 			}
