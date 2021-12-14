@@ -138,7 +138,7 @@ const AtUpload = {
 								'at-upload',
 								this.block ? 'is-block' : '',
 								this.listType,
-								this.limit && fileList.length < this.limit ? '' : 'is-max'
+								this.limit && fileList.length >= this.limit ? 'is-max' : ''
 							]}
 						>
 							{this.listType !== 'text' ? uploadList : ''}
