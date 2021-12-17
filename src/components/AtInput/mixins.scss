@@ -19,7 +19,7 @@
 }
 
 @mixin at-input {
-	width: 240px;
+	// width: 240px;
 	.el-input__inner {
 		@include at-input-inner();
 	}
